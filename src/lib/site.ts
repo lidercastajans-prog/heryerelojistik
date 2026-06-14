@@ -23,34 +23,33 @@ export const site = {
   // Canlı alan adı
   url: "https://heryerelojistik.com",
 
-  // İletişim — telefon/WhatsApp PLACEHOLDER (gerçeğiyle değiştirilecek)
-  phoneDisplay: "0850 123 45 67",
-  phoneHref: "+908501234567",
-  whatsapp: "905001234567", // ülke kodu + numara, + ve boşluk olmadan
-  email: "info@heryerelojistik.com",
+  // İletişim
+  phoneDisplay: "0533 929 83 24",
+  phoneHref: "+905339298324",
+  whatsapp: "905339298324", // ülke kodu + numara, + ve boşluk olmadan
+  email: "heryerelojistik@gmail.com",
 
   address: {
-    line: "Atatürk Mah. Lojistik Cad. No: 1",
-    district: "Esenyurt",
+    line: "Merkez Mah. Kağıthane Cad. No:39 Kat:2 D:4",
+    district: "Kağıthane",
     city: "İstanbul",
     country: "Türkiye",
-    full: "Atatürk Mah. Lojistik Cad. No: 1, Esenyurt / İstanbul",
-    // Google Maps embed için (placeholder konum: İstanbul)
-    mapsQuery: "Esenyurt İstanbul",
+    full: "Merkez Mah. Kağıthane Cad. No:39 Kat:2 D:4, Kağıthane/İstanbul",
+    mapsQuery: "Merkez Mah. Kağıthane Cad. No:39 Kağıthane İstanbul",
   },
 
-  hours: "Hafta içi 08:00 – 19:00 · Cumartesi 09:00 – 17:00 · 7/24 destek hattı",
-  foundedYear: 1999,
+  hours: "7/24 — Haftanın her günü, 24 saat hizmet",
+  foundedYear: 2024,
 
-  // Arama motorlarına açık mı? Önizleme/placeholder aşamasında FALSE (noindex).
-  // Gerçek iletişim bilgileri girilip yayına hazır olunca TRUE yapılacak.
-  indexable: false,
+  // Arama motorlarına açık mı? Yayında ve gerçek bilgilerle: TRUE.
+  indexable: true,
 
   social: {
-    instagram: "https://instagram.com/",
-    facebook: "https://facebook.com/",
-    linkedin: "https://linkedin.com/",
-    youtube: "https://youtube.com/",
+    // Sosyal medya hesapları henüz açılmadı — açılınca buraya eklenecek.
+    instagram: "",
+    facebook: "",
+    linkedin: "",
+    youtube: "",
   },
 
   nav: [

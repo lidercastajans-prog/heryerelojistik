@@ -36,7 +36,7 @@ export default async function HakkimizdaPage() {
       />
       <PageHero
         title={`${site.name} kimdir?`}
-        description={`${site.foundedYear}'dan bu yana binlerce ailenin ve işletmenin taşınmasına eşlik eden, güvenilir bir nakliyat çözüm ortağı.`}
+        description={`${site.foundedYear} yılında kurulan, ailelere ve işletmelere güvenle hizmet veren bir nakliyat çözüm ortağı.`}
         breadcrumb={[
           { name: "Ana Sayfa", path: "/" },
           { name: "Hakkımızda", path: "/hakkimizda" },
@@ -59,8 +59,8 @@ export default async function HakkimizdaPage() {
               fiyatlarımız ise keşif sonrası net ve şeffaf.
             </p>
             <p>
-              Bugün Türkiye'nin 81 iline düzenli seferlerle hizmet veriyor, her taşımada
-              müşteri memnuniyetini önceliğimiz olarak görüyoruz.
+              Türkiye'nin 81 iline evden eve nakliyat ve yük taşımacılığı hizmeti sunuyor,
+              her taşımada müşteri memnuniyetini önceliğimiz olarak görüyoruz.
             </p>
           </div>
 

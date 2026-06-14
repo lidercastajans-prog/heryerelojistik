@@ -45,15 +45,9 @@ export function organizationSchema() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "19:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "09:00",
-        closes: "17:00",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "00:00",
+        closes: "23:59",
       },
     ],
     knowsAbout: [
@@ -65,7 +59,7 @@ export function organizationSchema() {
       "Paketleme ve montaj",
       "Sigortalı taşımacılık",
     ],
-    sameAs: [site.social.instagram, site.social.facebook, site.social.linkedin],
+    sameAs: [site.social.instagram, site.social.facebook, site.social.linkedin].filter(Boolean),
   };
 }
 

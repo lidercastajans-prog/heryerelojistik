@@ -7,7 +7,6 @@ import WhyUs from "@/components/WhyUs";
 import ProcessSteps from "@/components/ProcessSteps";
 import CoverageAreas from "@/components/CoverageAreas";
 import Gallery from "@/components/Gallery";
-import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import CtaSection from "@/components/CtaSection";
 import SectionHeading from "@/components/SectionHeading";
@@ -16,7 +15,6 @@ import {
   fetchServices,
   fetchStats,
   fetchProcessSteps,
-  fetchTestimonials,
   fetchFaqs,
   fetchCoverage,
 } from "@/lib/fetchers";
@@ -24,11 +22,10 @@ import { galleryItems } from "@/lib/gallery";
 import { organizationSchema, websiteSchema, faqSchema } from "@/lib/schema";
 
 export default async function HomePage() {
-  const [services, stats, steps, testimonials, faqs, coverage] = await Promise.all([
+  const [services, stats, steps, faqs, coverage] = await Promise.all([
     fetchServices(),
     fetchStats(),
     fetchProcessSteps(),
-    fetchTestimonials(),
     fetchFaqs(),
     fetchCoverage(),
   ]);
@@ -64,8 +61,6 @@ export default async function HomePage() {
           <Gallery items={galleryItems.slice(0, 6)} />
         </div>
       </section>
-
-      <Testimonials testimonials={testimonials} />
 
       {/* SSS önizleme */}
       <section className="bg-surface py-20 lg:py-28">

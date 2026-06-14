@@ -2,8 +2,8 @@
 
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import { Phone, ShieldCheck, ArrowUpDown, Clock, Star, MapPin, ArrowRight } from "lucide-react";
-import { site, telLink } from "@/lib/site";
+import { Phone, ShieldCheck, ArrowUpDown, Clock, BadgeCheck, MapPin, ArrowRight } from "lucide-react";
+import { telLink } from "@/lib/site";
 import { TASIMA_TIPLERI } from "@/lib/constants";
 import { images } from "@/lib/images";
 import Photo from "./Photo";
@@ -51,8 +51,8 @@ export default function Hero() {
         {/* Sol — mesaj */}
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur">
-            <Star className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden />
-            {site.foundedYear}'dan beri 50.000+ mutlu taşınma
+            <ShieldCheck className="h-4 w-4 text-accent-400" aria-hidden />
+            Sigortalı · Asansörlü · 7/24 Hizmet
           </span>
 
           <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-6xl">
@@ -96,8 +96,8 @@ export default function Hero() {
           </div>
           {/* Yüzen rozet — puan */}
           <div className="floaty absolute -bottom-5 -right-3 z-10 hidden items-center gap-2 rounded-2xl bg-white px-4 py-2.5 text-sm font-bold text-ink shadow-xl sm:flex">
-            <Star className="h-5 w-5 fill-amber-400 text-amber-400" aria-hidden />
-            4.9 / 5 Memnuniyet
+            <BadgeCheck className="h-5 w-5 text-accent-600" aria-hidden />
+            Ücretsiz Keşif
           </div>
 
           <form

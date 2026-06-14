@@ -7,6 +7,11 @@ import { InstagramIcon, FacebookIcon, LinkedinIcon } from "./SocialIcons";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const socials = [
+    { href: site.social.instagram, label: "Instagram", Icon: InstagramIcon },
+    { href: site.social.facebook, label: "Facebook", Icon: FacebookIcon },
+    { href: site.social.linkedin, label: "LinkedIn", Icon: LinkedinIcon },
+  ].filter((s) => s.href);
 
   return (
     <footer className="mt-24 bg-ink text-slate-300">
@@ -17,17 +22,15 @@ export default function Footer() {
           <p className="text-sm leading-relaxed text-slate-400">
             {site.legalName}. {site.tagline}
           </p>
-          <div className="flex gap-3 pt-1">
-            <SocialLink href={site.social.instagram} label="Instagram">
-              <InstagramIcon className="h-4 w-4" />
-            </SocialLink>
-            <SocialLink href={site.social.facebook} label="Facebook">
-              <FacebookIcon className="h-4 w-4" />
-            </SocialLink>
-            <SocialLink href={site.social.linkedin} label="LinkedIn">
-              <LinkedinIcon className="h-4 w-4" />
-            </SocialLink>
-          </div>
+          {socials.length > 0 && (
+            <div className="flex gap-3 pt-1">
+              {socials.map(({ href, label, Icon }) => (
+                <SocialLink key={label} href={href} label={label}>
+                  <Icon className="h-4 w-4" />
+                </SocialLink>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Hizmetler */}

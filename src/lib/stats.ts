@@ -1,4 +1,4 @@
-/** Anasayfa istatistik bandı (statik). */
+/** Anasayfa istatistik bandı — yeni firma için dürüst, abartısız değerler. */
 
 export type Stat = {
   value: number;
@@ -8,8 +8,8 @@ export type Stat = {
 };
 
 export const stats: Stat[] = [
-  { value: 25, suffix: "+", label: "Yıllık Tecrübe" },
-  { value: 50000, suffix: "+", label: "Başarılı Taşıma" },
-  { value: 81, label: "İle Hizmet" },
-  { value: 99, suffix: "%", label: "Müşteri Memnuniyeti" },
+  { value: 81, label: "İl Hizmet Ağı" },
+  { value: 100, suffix: "%", label: "Sigortalı Taşıma" },
+  { value: 7, suffix: "/24", label: "Kesintisiz Destek" },
+  { value: 0, suffix: "₺", label: "Keşif Ücreti" },
 ];

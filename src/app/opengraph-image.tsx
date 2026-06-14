@@ -55,7 +55,7 @@ export default function OpengraphImage() {
         {/* Alt bilgi */}
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 30, opacity: 0.95 }}>
           <div>heryerelojistik.com</div>
-          <div>4.9/5 puan · 50.000+ taşıma</div>
+          <div>Türkiye geneli · Sigortalı taşımacılık</div>
         </div>
       </div>
     ),
