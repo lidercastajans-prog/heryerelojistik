@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Rota Lojistik — Tema (Modern & Enerjik)
+   Canlı mavi + turkuaz, yuvarlak köşeler, yumuşak gölge
+   ============================================================ */
+
+@theme {
+  /* Marka — canlı mavi */
+  --color-brand-50: #eff5ff;
+  --color-brand-100: #dbe7fe;
+  --color-brand-200: #bfd3fe;
+  --color-brand-300: #93b4fd;
+  --color-brand-400: #608bfa;
+  --color-brand-500: #3b6bf6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4fd0;
+  --color-brand-800: #1e42a8;
+  --color-brand-900: #1e3a85;
+  --color-brand-950: #172554;
+
+  /* Accent — turkuaz */
+  --color-accent-50: #ecfeff;
+  --color-accent-100: #cffafe;
+  --color-accent-200: #a5f0fc;
+  --color-accent-300: #67e3f9;
+  --color-accent-400: #22ccee;
+  --color-accent-500: #06b6d4;
+  --color-accent-600: #0891b2;
+  --color-accent-700: #0e7490;
+  --color-accent-800: #155e75;
+  --color-accent-900: #164e63;
+
+  /* Nötr/ink */
+  --color-ink: #0f172a;
+  --color-ink-soft: #334155;
+  --color-muted: #64748b;
+  --color-surface: #f8fafc;
+  --color-line: #e2e8f0;
+
+  /* Fontlar (layout.tsx'ten gelir) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-poppins), var(--font-inter), sans-serif;
+
+  /* Yarıçap */
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.75rem;
+
+  /* Animasyonlar */
+  --animate-marquee: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  /* Çapa linklerinde sticky header için boşluk */
+  :target {
+    scroll-margin-top: 6rem;
+  }
+
+  /* Klavye odağı görünürlüğü */
+  :focus-visible {
+    outline: 3px solid var(--color-accent-500);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* Bölüm sarmalayıcı genişliği */
+  .container-x {
+    width: 100%;
+    max-width: 80rem; /* 1280px */
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  /* Form alanları */
+  .field-label {
+    display: block;
+    margin-bottom: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-ink-soft);
+  }
+
+  .field-input {
+    width: 100%;
+    border-radius: 0.875rem;
+    border: 1px solid var(--color-line);
+    background: #fff;
+    padding: 0.75rem 0.875rem;
+    font-size: 0.95rem;
+    color: var(--color-ink);
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .field-input::placeholder {
+    color: #94a3b8;
+  }
+  .field-input:focus {
+    border-color: var(--color-brand-500);
+    box-shadow: 0 0 0 3px var(--color-brand-100);
+  }
+  .field-input[aria-invalid="true"] {
+    border-color: #ef4444;
+  }
+
+  .field-error {
+    margin-top: 0.375rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #dc2626;
+  }
+}
+
+/* Yüzen (float) animasyonu — hero dekoratif öğeleri */
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.floaty { animation: floaty 7s ease-in-out infinite; }
+.floaty-slow { animation: floaty 11s ease-in-out infinite; }
+.floaty-fast { animation: floaty 5s ease-in-out infinite; }
+
+/* İnce film grain dokusu (derinlik hissi) */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Scroll-reveal — Reveal.tsx ile kullanılır */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hareketi azalt tercihine saygı */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .floaty, .floaty-slow, .floaty-fast,
+  .animate-marquee,
+  [class*="animate-"] {
+    animation: none !important;
+  }
+}
