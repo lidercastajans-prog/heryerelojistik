@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { Phone, ShieldCheck, ArrowUpDown, Clock, BadgeCheck, MapPin, ArrowRight } from "lucide-react";
 import { telLink } from "@/lib/site";
 import { TASIMA_TIPLERI } from "@/lib/constants";
+import { locations } from "@/lib/locations";
 import { images } from "@/lib/images";
 import Photo from "./Photo";
 import Parallax from "./Parallax";
@@ -112,10 +113,10 @@ export default function Hero() {
             <div className="mt-6 space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
                 <Field label="Nereden">
-                  <input type="text" value={from} onChange={(e) => setFrom(e.target.value)} placeholder="Örn. İstanbul / Kadıköy" className="field-input" />
+                  <input type="text" value={from} onChange={(e) => setFrom(e.target.value)} placeholder="İl veya semt yazın" className="field-input" list="hyl-locations" autoComplete="off" />
                 </Field>
                 <Field label="Nereye">
-                  <input type="text" value={to} onChange={(e) => setTo(e.target.value)} placeholder="Örn. İzmir / Bornova" className="field-input" />
+                  <input type="text" value={to} onChange={(e) => setTo(e.target.value)} placeholder="İl veya semt yazın" className="field-input" list="hyl-locations" autoComplete="off" />
                 </Field>
               </div>
               <Field label="Taşıma Tipi">
@@ -126,6 +127,12 @@ export default function Hero() {
                 </select>
               </Field>
             </div>
+
+            <datalist id="hyl-locations">
+              {locations.map((loc) => (
+                <option key={loc} value={loc} />
+              ))}
+            </datalist>
 
             <button
               type="submit"

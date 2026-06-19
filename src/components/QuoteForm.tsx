@@ -4,6 +4,7 @@ import { useActionState } from "react";
 import { CheckCircle2, AlertCircle } from "lucide-react";
 import { quoteAction, initialFormState } from "@/app/actions/quote";
 import { TASIMA_TIPLERI } from "@/lib/constants";
+import { locations } from "@/lib/locations";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function QuoteForm({
@@ -69,9 +70,14 @@ export default function QuoteForm({
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
-        <Field label="Nereden" name="from" placeholder="Örn. İstanbul / Kadıköy" defaultValue={defaults.from} error={state.errors?.from} required />
-        <Field label="Nereye" name="to" placeholder="Örn. İzmir / Bornova" defaultValue={defaults.to} error={state.errors?.to} required />
+        <Field label="Nereden" name="from" placeholder="İl veya semt yazın" defaultValue={defaults.from} error={state.errors?.from} list="hyl-locations" required />
+        <Field label="Nereye" name="to" placeholder="İl veya semt yazın" defaultValue={defaults.to} error={state.errors?.to} list="hyl-locations" required />
       </div>
+      <datalist id="hyl-locations">
+        {locations.map((loc) => (
+          <option key={loc} value={loc} />
+        ))}
+      </datalist>
 
       <Field label="Tahmini Taşınma Tarihi" name="date" type="date" />
 
@@ -112,6 +118,7 @@ function Field({
   defaultValue,
   error,
   required,
+  list,
 }: {
   label: string;
   name: string;
@@ -120,6 +127,7 @@ function Field({
   defaultValue?: string;
   error?: string;
   required?: boolean;
+  list?: string;
 }) {
   return (
     <div>
@@ -134,6 +142,8 @@ function Field({
         defaultValue={defaultValue}
         aria-invalid={!!error}
         className="field-input"
+        list={list}
+        autoComplete={list ? "off" : undefined}
       />
       {error && <p className="field-error">{error}</p>}
     </div>
