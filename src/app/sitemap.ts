@@ -1,20 +1,30 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
+import { cities } from "@/lib/cities";
+import { posts } from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
+  const now = new Date();
+
+  const staticRoutes = [
     "",
     "/hizmetler/evden-eve-nakliyat",
     "/hizmetler/sehirler-arasi-yuk-tasimaciligi",
+    "/nakliyat",
+    "/blog",
     "/hakkimizda",
     "/galeri",
     "/sss",
     "/iletisim",
     "/teklif-al",
   ];
-  const now = new Date();
 
-  return routes.map((route) => ({
+  const cityRoutes = cities.map((c) => `/nakliyat/${c.slug}`);
+  const postRoutes = posts.map((p) => `/blog/${p.slug}`);
+
+  const all = [...staticRoutes, ...cityRoutes, ...postRoutes];
+
+  return all.map((route) => ({
     url: `${site.url}${route}`,
     lastModified: now,
     changeFrequency: "monthly",

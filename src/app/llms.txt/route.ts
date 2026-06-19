@@ -2,6 +2,8 @@ import { site } from "@/lib/site";
 import { services } from "@/lib/services";
 import { faqs } from "@/lib/faqs";
 import { featuredCities } from "@/lib/coverage";
+import { cities } from "@/lib/cities";
+import { sortedPosts } from "@/lib/posts";
 
 // GEO (Generative Engine Optimization): yapay zekâ arama motorları için
 // faktüel, yapılandırılmış özet. /llms.txt adresinde sunulur.
@@ -58,10 +60,23 @@ export function GET() {
   lines.push(`- Ana sayfa: ${site.url}/`);
   lines.push(`- Evden eve nakliyat: ${site.url}/hizmetler/evden-eve-nakliyat`);
   lines.push(`- Şehirler arası yük taşımacılığı: ${site.url}/hizmetler/sehirler-arasi-yuk-tasimaciligi`);
+  lines.push(`- Hizmet bölgeleri: ${site.url}/nakliyat`);
   lines.push(`- Hakkımızda: ${site.url}/hakkimizda`);
   lines.push(`- Sık sorulan sorular: ${site.url}/sss`);
   lines.push(`- İletişim: ${site.url}/iletisim`);
   lines.push(`- Teklif al: ${site.url}/teklif-al`);
+  lines.push("");
+
+  lines.push("## Bölge Sayfaları");
+  for (const c of cities) {
+    lines.push(`- ${c.name} nakliyat: ${site.url}/nakliyat/${c.slug}`);
+  }
+  lines.push("");
+
+  lines.push("## Blog Yazıları");
+  for (const p of sortedPosts) {
+    lines.push(`- ${p.title}: ${site.url}/blog/${p.slug}`);
+  }
   lines.push("");
 
   return new Response(lines.join("\n"), {

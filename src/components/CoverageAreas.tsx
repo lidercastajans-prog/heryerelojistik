@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin, ArrowRight } from "lucide-react";
 import Reveal from "./Reveal";
+import { citySlugByName } from "@/lib/cities";
 
 export default function CoverageAreas({ cities, note }: { cities: string[]; note: string }) {
   return (
@@ -25,15 +26,26 @@ export default function CoverageAreas({ cities, note }: { cities: string[]; note
 
         <Reveal>
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {cities.map((city) => (
-              <li
-                key={city}
-                className="flex items-center gap-2 rounded-2xl border border-line bg-white px-4 py-3 text-sm font-semibold text-ink-soft transition-colors hover:border-brand-200 hover:text-brand-700"
-              >
-                <MapPin className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
-                {city}
-              </li>
-            ))}
+            {cities.map((city) => {
+              const slug = citySlugByName(city);
+              const cls =
+                "flex items-center gap-2 rounded-2xl border border-line bg-white px-4 py-3 text-sm font-semibold text-ink-soft transition-colors hover:border-brand-200 hover:text-brand-700";
+              return (
+                <li key={city}>
+                  {slug ? (
+                    <Link href={`/nakliyat/${slug}`} className={cls}>
+                      <MapPin className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+                      {city}
+                    </Link>
+                  ) : (
+                    <div className={cls}>
+                      <MapPin className="h-4 w-4 shrink-0 text-brand-600" aria-hidden />
+                      {city}
+                    </div>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </Reveal>
       </div>

@@ -103,6 +103,28 @@ export function serviceSchema(opts: { name: string; description: string; path: s
   };
 }
 
+export function articleSchema(opts: {
+  title: string;
+  description: string;
+  path: string;
+  date: string;
+  image?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: opts.title,
+    description: opts.description,
+    datePublished: opts.date,
+    dateModified: opts.date,
+    image: opts.image || OG,
+    inLanguage: "tr-TR",
+    author: { "@type": "Organization", name: site.name, url: site.url },
+    publisher: { "@id": `${site.url}/#organization` },
+    mainEntityOfPage: `${site.url}${opts.path}`,
+  };
+}
+
 export function breadcrumbSchema(items: { name: string; path: string }[]) {
   return {
     "@context": "https://schema.org",

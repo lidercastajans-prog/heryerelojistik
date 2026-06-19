@@ -56,10 +56,11 @@ export default function Footer() {
           </h2>
           <ul className="space-y-2.5 text-sm">
             <li><Link href="/hakkimizda" className="text-slate-400 hover:text-accent-300">Hakkımızda</Link></li>
+            <li><Link href="/nakliyat" className="text-slate-400 hover:text-accent-300">Hizmet Bölgeleri</Link></li>
+            <li><Link href="/blog" className="text-slate-400 hover:text-accent-300">Blog</Link></li>
             <li><Link href="/galeri" className="text-slate-400 hover:text-accent-300">Galeri</Link></li>
             <li><Link href="/sss" className="text-slate-400 hover:text-accent-300">Sık Sorulan Sorular</Link></li>
             <li><Link href="/iletisim" className="text-slate-400 hover:text-accent-300">İletişim</Link></li>
-            <li><Link href="/teklif-al" className="text-slate-400 hover:text-accent-300">Teklif Al</Link></li>
           </ul>
         </nav>
 
