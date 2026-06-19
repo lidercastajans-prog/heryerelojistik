@@ -115,6 +115,7 @@ export const services: Service[] = [
     title: "Asansörlü Taşımacılık",
     excerpt: "Yüksek katlara hızlı ve hasarsız taşıma için mobil asansör hizmeti.",
     icon: "ArrowUpDown",
+    image: images.serviceAsansorlu,
     href: "/hizmetler/evden-eve-nakliyat",
   },
   {
@@ -122,6 +123,7 @@ export const services: Service[] = [
     title: "Ofis & İşyeri Taşıma",
     excerpt: "İş akışınızı aksatmadan, hafta sonu ve mesai dışı planlamayla ofis taşıma.",
     icon: "Building2",
+    image: images.serviceOfis,
     href: "/hizmetler/sehirler-arasi-yuk-tasimaciligi",
   },
   {
@@ -129,6 +131,7 @@ export const services: Service[] = [
     title: "Paketleme & Montaj",
     excerpt: "Profesyonel ambalaj malzemeleriyle paketleme, mobilya söküm ve kurulum.",
     icon: "Package",
+    image: images.servicePaketleme,
     href: "/hizmetler/evden-eve-nakliyat",
   },
   {
@@ -136,6 +139,7 @@ export const services: Service[] = [
     title: "Eşya Depolama",
     excerpt: "Güvenlikli, sigortalı ve nem kontrollü depolarda kısa veya uzun süreli saklama.",
     icon: "Warehouse",
+    image: images.serviceDepolama,
     href: "/hizmetler/evden-eve-nakliyat",
   },
 ];

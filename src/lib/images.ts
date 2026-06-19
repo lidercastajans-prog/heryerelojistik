@@ -20,6 +20,10 @@ export const images = {
   heroBg: uns("photo-1485575301924-6891ef935dcd", 2000),
   serviceEvdenEve: uns("photo-1616432043562-3671ea2e5242", 1200),
   serviceSehirlerArasi: uns("photo-1473445730015-841f29a9490b", 1200),
+  serviceAsansorlu: uns("photo-1695222833131-54ee679ae8e5", 1200),
+  serviceOfis: uns("photo-1497215842964-222b430dc094", 1200),
+  servicePaketleme: uns("photo-1600725935160-f67ee4f6084a", 1200),
+  serviceDepolama: uns("photo-1553413077-190dd305871c", 1200),
   about: uns("photo-1592838064575-70ed626d3a0e", 1200),
   ctaBg: uns("photo-1720811559395-3ed8d1b16649", 1600),
 };
