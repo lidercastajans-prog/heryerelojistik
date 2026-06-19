@@ -20,6 +20,93 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "istanbul-evden-eve-nakliyat-ilceler",
+    title: "İstanbul Evden Eve Nakliyat: Tüm İlçeler Rehberi (Avrupa & Anadolu Yakası)",
+    excerpt:
+      "İstanbul'un 39 ilçesinde evden eve nakliyat. Avrupa ve Anadolu yakasının tüm ilçelerinde sigortalı, asansörlü taşıma ve ilçeye özel pratik bilgiler.",
+    date: "2026-06-14",
+    readMinutes: 9,
+    cover: uns("photo-1485575301924-6891ef935dcd", 1200),
+    sections: [
+      {
+        paragraphs: [
+          "Merkezimiz İstanbul Kağıthane'de; şehrin hem Avrupa hem Anadolu yakasının 39 ilçesinin tamamına evden eve nakliyat ve yük taşımacılığı hizmeti veriyoruz. İstanbul'da taşınmak; yoğun trafik, dar sokaklar, yüksek katlı binalar ve otopark/asansör koşulları nedeniyle özel deneyim gerektirir. Bu rehberde her iki yakanın ilçelerini ve dikkat edilmesi gerekenleri derledik.",
+        ],
+      },
+      {
+        heading: "Avrupa Yakası İlçeleri",
+        paragraphs: [
+          "Avrupa yakasının merkezi semtlerinden yeni yerleşim bölgelerine kadar tüm ilçelerde asansörlü ve sigortalı taşıma yapıyoruz:",
+        ],
+        bullets: [
+          "Bakırköy — sahil hattı, yoğun apartman; asansörlü taşıma sık tercih edilir.",
+          "Beşiktaş — merkezi konum, dar sokaklar ve sınırlı otopark; planlı taşıma şart.",
+          "Beyoğlu — tarihi doku ve dar sokaklar; uygun araç ve mobil asansör avantaj sağlar.",
+          "Şişli — iş ve konut yoğun; yüksek katlı binalarda asansörlü taşıma.",
+          "Kağıthane — merkez ofisimizin bulunduğu ilçe; en hızlı ve ekonomik hizmet.",
+          "Sarıyer — geniş yerleşim, villa ve siteler; planlı lojistik gerektirir.",
+          "Eyüpsultan — yeni siteler ile eski mahallelerin bir arada olduğu ilçe.",
+          "Gaziosmanpaşa — yoğun konut alanı; apartman taşımaları.",
+          "Bayrampaşa — merkezi ve ulaşımı kolay konum.",
+          "Zeytinburnu — sahil ve yoğun konut dokusu.",
+          "Fatih — tarihi yarımada, dar sokaklar; deneyimli ekip önemli.",
+          "Bağcılar — yoğun nüfus, apartman ağırlıklı yapı.",
+          "Bahçelievler — yoğun konut; asansörlü taşıma sıkça kullanılır.",
+          "Güngören — dar sokaklar ve yoğun yerleşim.",
+          "Esenler — apartman yoğun bölge.",
+          "Küçükçekmece — geniş ilçe, çok sayıda mahalle.",
+          "Avcılar — konut ve kampüs bölgesi; sahil hattı.",
+          "Başakşehir — yeni siteler ve yüksek katlı modern yapı.",
+          "Esenyurt — hızla büyüyen, yoğun siteler.",
+          "Beylikdüzü — modern siteler ve planlı yerleşim.",
+          "Büyükçekmece — sahil; site ve müstakil konut karışık.",
+          "Sultangazi — yoğun konut alanı.",
+          "Arnavutköy — gelişen bölge, havalimanına yakın.",
+          "Çatalca — geniş alan, kentsel ve kırsal bir arada.",
+          "Silivri — sahil; yazlık ve konut taşımaları.",
+        ],
+      },
+      {
+        heading: "Anadolu Yakası İlçeleri",
+        paragraphs: [
+          "Anadolu yakasının tüm ilçelerinde, sahil semtlerinden yeni site bölgelerine kadar evden eve nakliyat hizmeti sunuyoruz:",
+        ],
+        bullets: [
+          "Kadıköy — Anadolu yakasının merkezi; yoğun apartman ve trafik.",
+          "Üsküdar — tarihi ve konut dokusu; dar sokaklar.",
+          "Ataşehir — modern siteler ve yüksek katlı binalar.",
+          "Ümraniye — yoğun konut ve iş bölgesi.",
+          "Maltepe — sahil hattı ve siteler.",
+          "Kartal — gelişen, yüksek katlı konut projeleri.",
+          "Pendik — geniş ilçe; yeni siteler ve sanayi.",
+          "Tuzla — sanayi ve konut; organize bölgeler.",
+          "Sancaktepe — hızla büyüyen konut alanı.",
+          "Sultanbeyli — yoğun konut bölgesi.",
+          "Çekmeköy — yeni siteler ve villa bölgeleri.",
+          "Beykoz — orman ve sahil; villa/yalı taşımaları.",
+          "Şile — kıyı bölgesi; yazlık taşımaları.",
+          "Adalar — feribotla erişim; özel planlama gerektirir.",
+        ],
+      },
+      {
+        heading: "İstanbul'da taşınırken dikkat edilmesi gerekenler",
+        bullets: [
+          "Trafik yoğunluğu: Mümkünse hafta içi ve gündüz erken saatler tercih edilmeli.",
+          "Otopark ve izin: Bazı merkezi ilçelerde araç için geçici park/zabıta izni gerekebilir.",
+          "Asansörlü taşıma: Yüksek katlarda mobil asansör hem süreyi kısaltır hem hasarı önler.",
+          "Dar sokaklar: Tarihi ve merkezi semtlerde uygun boyutta araç seçimi kritiktir.",
+          "Erken planlama: Ay başı/sonu yoğun dönemlerde randevuyu önceden almak gerekir.",
+        ],
+      },
+      {
+        heading: "İstanbul'un her ilçesine hizmet",
+        paragraphs: [
+          "Yukarıdaki tüm ilçelerde ve mahallelerinde evden eve nakliyat, ofis taşıma, paketleme, asansörlü taşıma ve eşya depolama hizmeti veriyoruz. İlçenize özel net fiyat için ücretsiz keşif talep edebilir, hemen teklif alabilirsiniz.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "evden-eve-nakliyat-fiyatlari",
     title: "Evden Eve Nakliyatta Fiyatı Etkileyen 7 Faktör",
     excerpt:
