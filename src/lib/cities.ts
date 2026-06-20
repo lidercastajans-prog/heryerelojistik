@@ -27,11 +27,6 @@ export const cities: City[] = [
       "Merkezimiz İstanbul Kağıthane'de; şehrin hem Avrupa hem Anadolu yakasının tamamına evden eve nakliyat ve yük taşımacılığı hizmeti veriyoruz. Kadıköy'den Beylikdüzü'ne, Üsküdar'dan Başakşehir'e kadar dar sokak, yüksek kat, otopark ve trafik koşullarını iyi bilen ekibimizle çalışıyoruz.",
       "Asansörlü taşıma araçlarımız ve profesyonel paketleme ekibimizle eşyalarınızı ilk günkü gibi koruyor; tüm taşımaları sigorta güvencesiyle yapıyoruz. İstanbul içi taşımaların yanında, İstanbul'dan Türkiye'nin 81 iline düzenli sevkiyat sağlıyoruz.",
     ],
-    districts: [
-      "Kadıköy", "Üsküdar", "Beşiktaş", "Şişli", "Kağıthane", "Beyoğlu",
-      "Bakırköy", "Beylikdüzü", "Esenyurt", "Başakşehir", "Maltepe", "Pendik",
-      "Ataşehir", "Ümraniye", "Sarıyer", "Fatih",
-    ],
     routes: ["Ankara", "İzmir", "Bursa", "Antalya", "Kocaeli", "Tekirdağ"],
   },
   {

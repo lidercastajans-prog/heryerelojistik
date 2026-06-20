@@ -8,6 +8,7 @@ import WhyUs from "@/components/WhyUs";
 import CtaSection from "@/components/CtaSection";
 import JsonLd from "@/components/JsonLd";
 import { cities, getCityBySlug, citySlugByName } from "@/lib/cities";
+import { istanbulDistricts } from "@/lib/istanbul-districts";
 import { fetchServices } from "@/lib/fetchers";
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 
@@ -75,24 +76,47 @@ export default async function CityPage({
           ))}
         </div>
 
-        {/* İlçeler */}
-        {city.districts && city.districts.length > 0 && (
+        {/* İlçeler — İstanbul'da her ilçe kendi sayfasına linklenir */}
+        {city.slug === "istanbul" ? (
           <div className="mt-10">
             <h2 className="font-heading text-xl font-bold text-ink">
-              {city.name}'da hizmet verdiğimiz ilçeler
+              İstanbul'da hizmet verdiğimiz ilçeler
             </h2>
+            <p className="mt-1 text-sm text-muted">İlçenize özel sayfa için tıklayın.</p>
             <ul className="mt-4 flex flex-wrap gap-2.5">
-              {city.districts.map((d) => (
-                <li
-                  key={d}
-                  className="flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-sm font-medium text-ink-soft"
-                >
-                  <MapPin className="h-3.5 w-3.5 text-brand-600" aria-hidden />
-                  {d}
+              {istanbulDistricts.map((d) => (
+                <li key={d.slug}>
+                  <Link
+                    href={`/nakliyat/istanbul/${d.slug}`}
+                    className="flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-sm font-medium text-ink-soft transition-colors hover:border-brand-200 hover:text-brand-700"
+                  >
+                    <MapPin className="h-3.5 w-3.5 text-brand-600" aria-hidden />
+                    {d.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
+        ) : (
+          city.districts &&
+          city.districts.length > 0 && (
+            <div className="mt-10">
+              <h2 className="font-heading text-xl font-bold text-ink">
+                {city.name}'da hizmet verdiğimiz ilçeler
+              </h2>
+              <ul className="mt-4 flex flex-wrap gap-2.5">
+                {city.districts.map((d) => (
+                  <li
+                    key={d}
+                    className="flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-sm font-medium text-ink-soft"
+                  >
+                    <MapPin className="h-3.5 w-3.5 text-brand-600" aria-hidden />
+                    {d}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
         )}
 
         {/* Popüler güzergâhlar */}
