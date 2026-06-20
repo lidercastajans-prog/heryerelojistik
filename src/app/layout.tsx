@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   creator: site.name,
   publisher: site.name,
   category: "Lojistik ve Nakliyat",
+  verification: { google: "eBTLiH9_vNIZ3RdAQrDfDXj-ANomNN5b-1yL3auFO2g" },
   keywords: [
     "Her Yere Lojistik",
     "evden eve nakliyat",
