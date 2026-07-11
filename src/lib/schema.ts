@@ -1,10 +1,16 @@
 /** Schema.org JSON-LD üreticileri (SEO + GEO / yapay zekâ arama motorları için). */
 
 import { site } from "./site";
-import { faqs } from "./faqs";
+import { faqs, type Faq } from "./faqs";
 import { featuredCities } from "./coverage";
+import { istanbulDistricts } from "./istanbul-districts";
 
 const OG = `${site.url}/opengraph-image`;
+
+/** Google Haritalar'da adresi açan bağlantı. */
+const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  site.address.mapsQuery
+)}`;
 
 /** MovingCompany + LocalBusiness — site geneli ana varlık (entity) */
 export function organizationSchema() {
@@ -27,13 +33,19 @@ export function organizationSchema() {
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.line,
-      addressLocality: site.address.city,
+      addressLocality: site.address.district,
       addressRegion: site.address.city,
       addressCountry: "TR",
     },
+    hasMap: MAPS_URL,
     areaServed: [
       { "@type": "Country", name: "Türkiye" },
       ...featuredCities.map((c) => ({ "@type": "City", name: c })),
+      // Hizmet verdiğimiz İstanbul ilçeleri — yerel aramada varlık (entity) eşleşmesi için.
+      ...istanbulDistricts.map((d) => ({
+        "@type": "AdministrativeArea",
+        name: `${d.name}, İstanbul`,
+      })),
     ],
     contactPoint: {
       "@type": "ContactPoint",
@@ -76,10 +88,15 @@ export function websiteSchema() {
 }
 
 export function faqSchema() {
+  return faqSchemaFor(faqs);
+}
+
+/** Verilen soru-cevap listesinden FAQPage şeması (ilçe sayfaları kendi SSS'sini verir). */
+export function faqSchemaFor(items: readonly Faq[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
+    mainEntity: items.map((f) => ({
       "@type": "Question",
       name: f.question,
       acceptedAnswer: { "@type": "Answer", text: f.answer },
