@@ -27,7 +27,7 @@ export function organizationSchema() {
     email: site.email,
     foundingDate: String(site.foundedYear),
     image: OG,
-    logo: OG,
+    logo: `${site.url}/brand/logo-kare.png`,
     priceRange: "₺₺",
     currenciesAccepted: "TRY",
     address: {

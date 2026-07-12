@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 100 100" role="img" aria-label="Her Yere Lojistik">
+  <title>Her Yere Lojistik</title>
+  <defs>
+    <linearGradient id="hyl-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <mask id="hyl-truck-mask">
+      <rect x="0" y="0" width="100" height="100" fill="black"/>
+      <g transform="translate(11.9 11.9) scale(0.7619)">
+        <g transform="translate(0 -1)">
+          <!-- kasa -->
+          <rect x="8" y="25" width="46" height="37" rx="5" fill="white"/>
+          <!-- sasi: kasayi kabine baglar, alt hatti duz tutar -->
+          <rect x="45" y="52" width="14" height="10" fill="white"/>
+          <!-- kabin -->
+          <path d="M61 34 H71 L85 48 H88 Q92 48 92 52 V59 Q92 62 89 62 H57 V38 Q57 34 61 34 Z" fill="white"/>
+          <!-- tekerlekler -->
+          <circle cx="25" cy="67" r="10" fill="white"/>
+          <circle cx="77" cy="67" r="10" fill="white"/>
+          <!-- oyuklar: jant gobekleri + kasa kapak cizgisi -->
+          <circle cx="25" cy="67" r="4" fill="black"/>
+          <circle cx="77" cy="67" r="4" fill="black"/>
+          <rect x="15.5" y="32" width="3.2" height="22" rx="1.6" fill="black"/>
+        </g>
+      </g>
+    </mask>
+  </defs>
+
+  <rect x="0" y="0" width="100" height="100" rx="24" fill="url(#hyl-grad)"/>
+  <rect x="0" y="0" width="100" height="100" fill="#ffffff" mask="url(#hyl-truck-mask)"/>
+</svg>
