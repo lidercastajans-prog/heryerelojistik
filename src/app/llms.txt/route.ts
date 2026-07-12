@@ -3,6 +3,7 @@ import { services } from "@/lib/services";
 import { faqs } from "@/lib/faqs";
 import { featuredCities } from "@/lib/coverage";
 import { cities } from "@/lib/cities";
+import { istanbulDistricts } from "@/lib/istanbul-districts";
 import { sortedPosts } from "@/lib/posts";
 
 // GEO (Generative Engine Optimization): yapay zekâ arama motorları için
@@ -70,6 +71,21 @@ export function GET() {
   lines.push("## Bölge Sayfaları");
   for (const c of cities) {
     lines.push(`- ${c.name} nakliyat: ${site.url}/nakliyat/${c.slug}`);
+  }
+  lines.push("");
+
+  lines.push("## İstanbul İlçeleri");
+  lines.push(
+    `İstanbul'un 39 ilçesinin tamamına hizmet veriyoruz. Her ilçe için o ilçenin sokak ` +
+      `yapısı, asansör ve otopark koşullarına göre hazırlanmış ayrı bir sayfa ve ilçeye özel ` +
+      `soru-cevap bölümü bulunur.`
+  );
+  lines.push("");
+  for (const d of istanbulDistricts) {
+    lines.push(
+      `- **${d.name}** (${d.side}) — ${d.neighborhoods.slice(0, 4).join(", ")} ve çevresi: ` +
+        `${site.url}/nakliyat/istanbul/${d.slug}`
+    );
   }
   lines.push("");
 
