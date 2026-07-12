@@ -27,7 +27,8 @@ export const site = {
   phoneDisplay: "0533 929 83 24",
   phoneHref: "+905339298324",
   whatsapp: "905339298324", // ülke kodu + numara, + ve boşluk olmadan
-  email: "heryerelojistik@gmail.com",
+  // Alan adı e-postası: ImprovMX ile heryerelojistik@gmail.com kutusuna yönlendiriliyor.
+  email: "info@heryerelojistik.com",
 
   address: {
     line: "Merkez Mah. Kağıthane Cad. No:39 Kat:2 D:4",
