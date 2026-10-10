@@ -57,7 +57,7 @@ export default function IletisimPage() {
         {/* Form */}
         <div className="rounded-3xl border border-line bg-white p-7 shadow-sm sm:p-9">
           <h2 className="font-heading text-2xl font-bold text-ink">Mesaj gönderin</h2>
-          <p className="mt-1.5 text-sm text-muted">Formu doldurun, en kısa sürede dönüş yapalım.</p>
+          <p className="mt-1.5 text-sm text-muted">Formu doldurun, mesajınız WhatsApp&apos;ta hazır açılsın — en kısa sürede dönüş yapalım.</p>
           <div className="mt-6">
             <ContactForm />
           </div>

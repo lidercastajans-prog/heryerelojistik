@@ -31,7 +31,7 @@ export default async function TeklifAlPage({
       />
       <PageHero
         title="Ücretsiz Teklif Al"
-        description="Birkaç bilgiyi paylaşın, en kısa sürede sizi arayıp net fiyatınızı sunalım."
+        description="Birkaç bilgiyi doldurun, talebiniz WhatsApp'ta hazır açılsın — en kısa sürede net fiyatınızı sunalım."
         breadcrumb={[
           { name: "Ana Sayfa", path: "/" },
           { name: "Teklif Al", path: "/teklif-al" },
