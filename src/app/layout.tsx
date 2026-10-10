@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { site } from "@/lib/site";
 import Header from "@/components/Header";
@@ -7,16 +7,24 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MobileActionBar from "@/components/MobileActionBar";
 
-const inter = Inter({
+// FONTLAR DEPODA (src/app/fonts, 10.10.2026): next/font/google derlemede Google'dan indirir; Google Vercel'e sorgulu
+// dosya adresleri döndürünce Turbopack derlemesi düşüyor (aynı kalıptaki Evofis'te yaşandı). Tüm Türkçe harfler dahil;
+// yeniden indirme: `node scripts/font-indir.mjs` (ayrıntı: src/app/fonts/OKUBENI.md).
+const inter = localFont({
+  src: "./fonts/inter.woff2",
   variable: "--font-inter",
-  subsets: ["latin", "latin-ext"],
+  weight: "100 900",
   display: "swap",
 });
 
-const poppins = Poppins({
+const poppins = localFont({
+  src: [
+    { path: "./fonts/poppins-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/poppins-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/poppins-700.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/poppins-800.woff2", weight: "800", style: "normal" },
+  ],
   variable: "--font-poppins",
-  weight: ["500", "600", "700", "800"],
-  subsets: ["latin", "latin-ext"],
   display: "swap",
 });
 
