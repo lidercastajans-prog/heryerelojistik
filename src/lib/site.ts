@@ -34,8 +34,10 @@ export const site = {
     line: "Merkez Mah. Kağıthane Cad. No:39 Kat:2 D:4",
     district: "Kağıthane",
     city: "İstanbul",
+    postalCode: "34406",
     country: "Türkiye",
-    full: "Merkez Mah. Kağıthane Cad. No:39 Kat:2 D:4, Kağıthane/İstanbul",
+    // Google İşletme Profili'ndeki adresle birebir aynı yazım (ad-adres-telefon tutarlılığı yerel sıralamayı etkiler).
+    full: "Merkez Mah. Kağıthane Cad. No:39 Kat:2 D:4, 34406 Kağıthane/İstanbul",
     mapsQuery: "Merkez Mah. Kağıthane Cad. No:39 Kağıthane İstanbul",
   },
 

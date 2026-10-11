@@ -35,6 +35,7 @@ export function organizationSchema() {
       streetAddress: site.address.line,
       addressLocality: site.address.district,
       addressRegion: site.address.city,
+      postalCode: site.address.postalCode,
       addressCountry: "TR",
     },
     hasMap: MAPS_URL,
