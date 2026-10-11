@@ -12,7 +12,7 @@ const service = getServiceBySlug(SLUG)!;
 export const metadata: Metadata = {
   title: "Şehirler Arası Yük Taşımacılığı",
   description:
-    "Parsiyel ve komple yük taşımacılığı; 81 ile düzenli sefer, canlı takip, sigortalı yük ve zamanında teslimat. Bireysel ve kurumsal çözümler.",
+    "Parsiyel ve komple yük taşımacılığı; 81 ile sigortalı taşıma, planlı yükleme ve teslim. Bireysel ve kurumsal çözümler.",
   alternates: { canonical: `/hizmetler/${SLUG}` },
 };
 

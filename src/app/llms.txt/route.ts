@@ -46,7 +46,7 @@ export function GET() {
   lines.push("- Asansörlü taşıma hizmeti");
   lines.push("- Ücretsiz keşif ve yazılı, net fiyat (sürpriz ek ücret yok)");
   lines.push("- Parsiyel (paylaşımlı) ve komple yük taşımacılığı");
-  lines.push("- Şehirler arası sevkiyatlarda canlı takip");
+  lines.push("- Şehirler arası sevkiyatlarda yola çıkış ve tahmini varış bilgilendirmesi");
   lines.push("- 7/24 müşteri destek hattı");
   lines.push("");
 

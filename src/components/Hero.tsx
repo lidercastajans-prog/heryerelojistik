@@ -66,7 +66,7 @@ export default function Hero() {
 
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/80">
             Evden eve nakliyat ve şehirler arası yük taşımacılığında sigortalı,
-            asansörlü ve zamanında teslimat. Saniyeler içinde online teklif alın.
+            asansörlü ve planlı taşıma. Saniyeler içinde online teklif alın.
           </p>
 
           <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-white/90">
@@ -88,12 +88,12 @@ export default function Hero() {
 
         {/* Sağ — anlık teklif kutusu (cam) */}
         <div className="relative">
-          {/* Yüzen rozet — canlı takip */}
+          {/* Yüzen rozet — hizmet ağı */}
           <div className="floaty-fast absolute -left-4 -top-5 z-10 hidden items-center gap-2 rounded-2xl bg-white px-4 py-2.5 text-sm font-bold text-ink shadow-xl sm:flex">
             <span className="grid h-7 w-7 place-items-center rounded-full bg-accent-100 text-accent-600">
               <MapPin className="h-4 w-4" aria-hidden />
             </span>
-            Canlı Takip
+            81 İle Hizmet
           </div>
           {/* Yüzen rozet — puan */}
           <div className="floaty absolute -bottom-5 -right-3 z-10 hidden items-center gap-2 rounded-2xl bg-white px-4 py-2.5 text-sm font-bold text-ink shadow-xl sm:flex">
@@ -142,7 +142,7 @@ export default function Hero() {
               <ArrowRight className="h-5 w-5" aria-hidden />
             </button>
             <p className="mt-3 text-center text-xs text-muted">
-              Birkaç dakikada dönüş yapıyoruz · Ücretsiz keşif
+              En kısa sürede dönüş yapıyoruz · Ücretsiz keşif
             </p>
           </form>
         </div>

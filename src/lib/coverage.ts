@@ -17,4 +17,4 @@ export const featuredCities: string[] = [
 ];
 
 export const coverageNote =
-  "Türkiye'nin 81 iline düzenli seferlerle evden eve nakliyat ve yük taşımacılığı hizmeti veriyoruz.";
+  "Türkiye'nin 81 iline evden eve nakliyat ve yük taşımacılığı hizmeti veriyoruz.";

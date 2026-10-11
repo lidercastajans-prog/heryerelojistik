@@ -38,7 +38,7 @@ export const services: Service[] = [
     slug: "evden-eve-nakliyat",
     title: "Evden Eve Nakliyat",
     excerpt:
-      "Eşyalarınızı uzman ekiple paketliyor, asansörle indirip sigortalı olarak yeni evinize taşıyoruz.",
+      "Eşyalarınızı özenle paketliyor, asansörle indirip sigortalı olarak yeni evinize taşıyoruz.",
     icon: "Home",
     featured: true,
     image: images.serviceEvdenEve,
@@ -51,7 +51,7 @@ export const services: Service[] = [
         { icon: "Package", title: "Profesyonel Paketleme", text: "Balonlu naylon, çok katlı koli ve özel ambalajla her eşya korunur." },
         { icon: "ArrowUpDown", title: "Asansörlü Taşıma", text: "Yüksek katlara güvenli ve hızlı taşıma için mobil asansör." },
         { icon: "ShieldCheck", title: "Sigortalı Taşımacılık", text: "Tüm eşyalarınız taşıma süresince sigorta güvencesi altında." },
-        { icon: "Wrench", title: "Montaj & Demontaj", text: "Mobilyalarınız uzman ustalarca sökülür ve yeni evinizde kurulur." },
+        { icon: "Wrench", title: "Montaj & Demontaj", text: "Mobilyalarınız sökülür ve yeni evinizde yeniden kurulur." },
       ],
       sections: [
         {
@@ -62,7 +62,7 @@ export const services: Service[] = [
         {
           title: "Paketleme ve taşıma",
           body: "Kırılacak eşyalar özel ambalajla, beyaz eşya ve mobilyalar koruyucu örtülerle hazırlanır. Eşyalar numaralandırılır, asansörle güvenle indirilir ve donanımlı araçlarımızla taşınır.",
-          bullets: ["Kırılacaklara özel ambalaj", "Beyaz eşya ve mobilyaya koruma", "Modern, kapalı kasa araç filosu"],
+          bullets: ["Kırılacaklara özel ambalaj", "Beyaz eşya ve mobilyaya koruma", "Kapalı kasa araçla taşıma"],
         },
         {
           title: "Yeni evde kurulum",
@@ -76,7 +76,7 @@ export const services: Service[] = [
     slug: "sehirler-arasi-yuk-tasimaciligi",
     title: "Şehirler Arası Yük Taşımacılığı",
     excerpt:
-      "Parsiyel ve komple yük taşımacılığı; 81 ile düzenli sefer, canlı takip ve zamanında teslimat.",
+      "Parsiyel ve komple yük taşımacılığı; 81 ile sigortalı taşıma ve planlı teslimat.",
     icon: "Truck",
     featured: true,
     image: images.serviceSehirlerArasi,
@@ -84,28 +84,28 @@ export const services: Service[] = [
     detail: {
       intro:
         "İster tek palet ister komple tır olsun, yükünüzü Türkiye'nin dört bir yanına güvenle ulaştırıyoruz. " +
-        "Geniş araç filomuz ve düzenli sefer ağımızla hem bireysel hem kurumsal taşımalarınızda yanınızdayız.",
+        "Yükünüze uygun araçla, hem bireysel hem kurumsal taşımalarınızda yanınızdayız.",
       highlights: [
         { icon: "Boxes", title: "Parsiyel & Komple", text: "Tek koliden komple tıra kadar her ölçekte yük taşıma." },
-        { icon: "Route", title: "81 İle Sefer", text: "Düzenli sefer ağıyla Türkiye genelinde hızlı dağıtım." },
-        { icon: "MapPin", title: "Canlı Takip", text: "Yükünüzün nerede olduğunu anlık olarak takip edin." },
+        { icon: "Route", title: "81 İle Taşıma", text: "Türkiye'nin her iline, yükünüze uygun araçla sevkiyat." },
+        { icon: "MapPin", title: "Yolda Bilgilendirme", text: "Yola çıkış ve tahmini varış saatini paylaşıyor, yol boyunca telefonla bilgi veriyoruz." },
         { icon: "ShieldCheck", title: "Sigortalı Yük", text: "Taşınan tüm yükler sigorta kapsamında güvende." },
       ],
       sections: [
         {
           title: "Parsiyel (paylaşımlı) taşıma",
-          body: "Komple araç gerektirmeyen yükleriniz için ekonomik çözüm. Yükünüz hacmi kadar ücretlendirilir, düzenli seferlerle hedefe ulaşır.",
-          bullets: ["Hacme göre uygun fiyat", "Düzenli sefer takvimi", "Küçük ve orta ölçekli yükler için ideal"],
+          body: "Komple araç gerektirmeyen yükleriniz için ekonomik çözüm. Yükünüz hacmi kadar ücretlendirilir, aynı yöne giden sevkiyatla hedefe ulaşır.",
+          bullets: ["Hacme göre uygun fiyat", "Esnek sevkiyat planı", "Küçük ve orta ölçekli yükler için ideal"],
         },
         {
           title: "Komple yük taşıma",
-          body: "Büyük hacimli ve yoğun sevkiyatlar için kapıdan kapıya komple araç. Yükünüz tek araçla, aktarmasız ve en hızlı şekilde teslim edilir.",
+          body: "Büyük hacimli ve yoğun sevkiyatlar için kapıdan kapıya komple araç. Yükünüz tek araçla, aktarmasız ve doğrudan teslim edilir.",
           bullets: ["Kapıdan kapıya teslim", "Aktarmasız, doğrudan sevkiyat", "Kamyonet, kamyon ve tır seçenekleri"],
         },
         {
           title: "Kurumsal lojistik & dağıtım",
-          body: "İşletmeniz için düzenli sevkiyat, bayi dağıtımı ve proje bazlı taşıma çözümleri. İhtiyacınıza özel planlama ve raporlama sunuyoruz.",
-          bullets: ["Düzenli sevkiyat anlaşmaları", "Bayi ve şube dağıtımı", "Özel fiyatlandırma ve raporlama"],
+          body: "İşletmeniz için düzenli sevkiyat, bayi dağıtımı ve proje bazlı taşıma çözümleri. İhtiyacınıza özel planlama yapıyoruz.",
+          bullets: ["Düzenli sevkiyat anlaşmaları", "Bayi ve şube dağıtımı", "İşe özel fiyatlandırma"],
         },
       ],
     },
@@ -113,7 +113,7 @@ export const services: Service[] = [
   {
     slug: "asansorlu-tasimacilik",
     title: "Asansörlü Taşımacılık",
-    excerpt: "Yüksek katlara hızlı ve hasarsız taşıma için mobil asansör hizmeti.",
+    excerpt: "Yüksek katlarda büyük eşyayı cepheden taşımak için mobil asansör hizmeti.",
     icon: "ArrowUpDown",
     image: images.serviceAsansorlu,
     href: "/hizmetler/evden-eve-nakliyat",
@@ -137,7 +137,7 @@ export const services: Service[] = [
   {
     slug: "esya-depolama",
     title: "Eşya Depolama",
-    excerpt: "Güvenlikli, sigortalı ve nem kontrollü depolarda kısa veya uzun süreli saklama.",
+    excerpt: "Paketlenip etiketlenen eşyalarınız için kapalı depoda kısa veya uzun süreli saklama.",
     icon: "Warehouse",
     image: images.serviceDepolama,
     href: "/hizmetler/evden-eve-nakliyat",

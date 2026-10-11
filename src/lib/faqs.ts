@@ -19,7 +19,7 @@ export const faqs: Faq[] = [
   {
     question: "Eşyalarım sigortalı mı taşınıyor?",
     answer:
-      "Evet. Tüm taşımalarımız sigorta güvencesi altındadır. Taşıma sırasında oluşabilecek olası hasarlar teminat kapsamında karşılanır.",
+      "Evet. Tüm taşımalarımız sigorta güvencesi altındadır. Taşıma sırasında oluşabilecek hasarlar sigorta poliçesinin kapsamı dahilinde karşılanır.",
   },
   {
     question: "Paketleme malzemelerini siz mi sağlıyorsunuz?",
@@ -32,13 +32,13 @@ export const faqs: Faq[] = [
       "Mobil asansörümüz, önünde uygun park ve manevra alanı bulunan çoğu binada kullanılabilir. Keşif sırasında binanızın durumunu değerlendirip en güvenli yöntemi belirleriz.",
   },
   {
-    question: "Şehirler arası yükümü canlı takip edebilir miyim?",
+    question: "Şehirler arası taşımada yükümün durumunu nasıl öğrenirim?",
     answer:
-      "Evet. Şehirler arası sevkiyatlarınızda yükünüzün durumunu telefonla veya iletişim hattımız üzerinden anlık olarak öğrenebilirsiniz.",
+      "Yola çıkış ve tahmini varış saatini sizinle paylaşıyoruz. Yol boyunca 7/24 telefon ve WhatsApp hattımızdan ekibe ulaşıp yükünüzün nerede olduğunu öğrenebilirsiniz.",
   },
   {
     question: "Eşyalarımı bir süre depolayabilir misiniz?",
     answer:
-      "Elbette. Güvenlikli, sigortalı ve nem kontrollü depolarımızda eşyalarınızı kısa veya uzun süreli olarak saklayabiliriz. Taşıma ile depolamayı tek pakette de planlayabiliriz.",
+      "Evet. Eşyalarınızı paketleyip etiketleyerek kapalı depoda kısa veya uzun süreli olarak saklayabiliriz. Taşıma ile depolamayı tek pakette de planlayabiliriz.",
   },
 ];

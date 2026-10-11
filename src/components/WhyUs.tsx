@@ -4,10 +4,10 @@ import Reveal from "./Reveal";
 
 const REASONS = [
   { icon: ShieldCheck, title: "Sigortalı Taşıma", text: "Tüm eşyalarınız taşıma boyunca sigorta güvencesi altında." },
-  { icon: ArrowUpDown, title: "Asansörlü Ekipman", text: "Yüksek katlara hızlı, güvenli ve hasarsız taşıma." },
-  { icon: Users, title: "Deneyimli Ekip", text: "Eğitimli, üniformalı ve işinin uzmanı taşıma kadrosu." },
+  { icon: ArrowUpDown, title: "Asansörlü Ekipman", text: "Yüksek katlarda büyük eşyayı merdivene sokmadan, cepheden taşıma." },
+  { icon: Users, title: "Özenli Ekip", text: "Paketlemeden kuruluma kadar eşyanıza kendi eşyamız gibi davranıyoruz." },
   { icon: BadgeDollarSign, title: "Net Fiyat", text: "Keşif sonrası yazılı, sürpriz çıkarmayan şeffaf fiyat." },
-  { icon: Clock, title: "Zamanında Teslim", text: "Söz verdiğimiz günde ve saatte teslimat garantisi." },
+  { icon: Clock, title: "Planlı Teslim", text: "Yükleme ve teslim saatini baştan planlıyor, değişiklik olursa önceden haber veriyoruz." },
   { icon: Headphones, title: "7/24 Destek", text: "Sorularınız için her an ulaşabileceğiniz müşteri hattı." },
 ];
 
@@ -19,7 +19,7 @@ export default function WhyUs() {
           center
           eyebrow="Neden Biz?"
           title="Taşınmanın stresini biz üstleniyoruz"
-          description="Binlerce ailenin ve işletmenin bize güvenmesinin ardında somut nedenler var."
+          description="Her taşımada uyguladığımız somut çalışma prensipleri."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {REASONS.map((r, i) => {

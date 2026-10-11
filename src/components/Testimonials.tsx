@@ -7,6 +7,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function Testimonials({ testimonials }: { testimonials: Testimonial[] }) {
   const trackRef = useRef<HTMLUListElement>(null);
+  if (testimonials.length === 0) return null;
 
   const scrollByCard = (dir: 1 | -1) => {
     const track = trackRef.current;
@@ -21,7 +22,7 @@ export default function Testimonials({ testimonials }: { testimonials: Testimoni
       <div className="flex flex-col items-end justify-between gap-6 sm:flex-row">
         <SectionHeading
           eyebrow="Müşteri Yorumları"
-          title="Binlerce mutlu taşınmanın hikâyesi"
+          title="Müşterilerimiz ne diyor?"
           description="Bizi tercih eden müşterilerimiz deneyimlerini paylaşıyor."
         />
         <div className="hidden gap-2 sm:flex">

@@ -188,7 +188,7 @@ export const istanbulDistricts: District[] = [
       "Cendere Vadisi hattı ofis ve iş yeri taşımalarının yoğunlaştığı yer. Buradaki plazalarda taşınmalar genelde mesai bitiminde veya hafta sonu yapılıyor, bina yönetimleri yük asansörünü o saatlerde veriyor. Seyrantepe ve Sanayi Mahallesi tarafından TEM ile çevre yollarına çıkmak kolay olduğu için şehir dışı yüklerde de bu bölgeyi kullanıyoruz. Merkezimiz burada olduğu için Kağıthane'de aynı gün ekip çıkarabiliyor, acil işlerde hızlı hareket edebiliyoruz. Paketleme, asansörlü taşıma, ofis nakli, şehirler arası yük taşımacılığı, sigortalı taşıma ve eşya depolama; hepsi buradan çıkıyor. Yeni ev veya ofis hazır değilse eşyayı depoya alıp hazır olduğunda teslim ediyoruz. Mobilyanın sökümü ve yeni adreste kurulumu da ekibimize ait, ayrı usta aramanıza gerek kalmıyor. Arayın, adresinizi görmeye gelelim.",
     ],
     notes: [
-      { title: "Merkezimiz burada", text: "Ofisimiz Kağıthane'de olduğu için ilçedeki işlerde en hızlı ekip biziz. Acil taşımalarda aynı gün araç çıkarabiliyoruz." },
+      { title: "Merkezimiz burada", text: "Ofisimiz Kağıthane'de olduğu için ilçedeki işlere en kısa sürede ulaşıyoruz. Acil taşımalarda aynı gün araç çıkarabiliyoruz." },
       { title: "Yamaç sokaklar", text: "Nurtepe, Gültepe ve Ortabayır'da sokaklar dik ve dar, büyük araç manevra yapamıyor. Kısa şasi araç ve mobil asansörle çalışıyoruz." },
       { title: "Yeni blok, eski apartman", text: "Kentsel dönüşüm ilçenin yarısını değiştirdi, yarısı hâlâ eski yapı. Adrese göre bazen yük asansörü randevusu, bazen mobil asansör gerekiyor." },
     ],
@@ -430,7 +430,7 @@ export const istanbulDistricts: District[] = [
     name: "Büyükçekmece",
     side: "Avrupa Yakası",
     intro:
-      "Büyükçekmece; Mimarsinan ve Kumburgaz gibi sahil semtleriyle hem siteleri hem müstakil konutları barındırır. Büyükçekmece'de yazlık ve konut taşımalarında deneyimliyiz.",
+      "Büyükçekmece; Mimarsinan ve Kumburgaz gibi sahil semtleriyle hem siteleri hem müstakil konutları barındırır. Büyükçekmece'de hem yazlık hem konut taşıması yapıyoruz.",
     neighborhoods: ["Mimarsinan", "Kumburgaz", "Türkoba", "Güzelce", "Cumhuriyet"],
     body: [
       "Büyükçekmece'de taşınma denince akla iki farklı iş geliyor. Biri Mimarsinan, Kumburgaz, Celaliye, Kamiloba ve Güzelce hattındaki sahil siteleri; diğeri göl çevresindeki ve iç mahallelerdeki müstakil evler, villalar. Sahil şeridindeki sitelerin çoğu yazlık olarak yapılmış, sonradan daimi konuta dönmüş. Bu binalar genelde alçak katlı, bu yüzden mobil asansör her adreste gerekmiyor. Ama sitelerin araç giriş kapıları dar, iç yollar dolambaçlı; büyük kamyonu blok kapısına kadar sokmak çoğu zaman mümkün olmuyor. Büyükçekmece evden eve nakliyat işlerinde bu yüzden araç seçimini önceden yapıyoruz, gerekirse aktarma aracıyla çalışıyoruz.",
@@ -605,7 +605,7 @@ export const istanbulDistricts: District[] = [
     name: "Çatalca",
     side: "Avrupa Yakası",
     intro:
-      "Çatalca; geniş alanı ve kentsel-kırsal karışık yapısıyla İstanbul'un en büyük yüzölçümlü ilçelerindendir. Çatalca merkez ve köylerine uzun mesafe taşımalarda deneyimliyiz.",
+      "Çatalca; geniş alanı ve kentsel-kırsal karışık yapısıyla İstanbul'un en büyük yüzölçümlü ilçelerindendir. Çatalca merkez ve köylerine taşımalarda uzun yolu plana baştan ekliyoruz.",
     neighborhoods: ["Ferhatpaşa", "Kaleiçi", "Çakıl", "Çanakça", "Subaşı"],
     body: [
       "Çatalca, İstanbul'un kırsal karakterini koruyan ilçesi ve taşıma planı da buna göre kuruluyor. Merkezdeki Kaleiçi ve Ferhatpaşa çevresinde az katlı binalar, bunun dışında Ovayenice, Çiftlikköy, Subaşı, Binkılıç ve Karadeniz'e bakan Ormanlı, Yalıköy gibi köylerde müstakil, bahçeli evler var. Bu evlerde yükseklik sorun değil; asıl mesele hacim ve mesafe. Bahçe, depo, ahır ya da kömürlükten çıkan eşya çoğu zaman evin içindekinden fazla yer kaplıyor. Çatalca evden eve nakliyat işinde keşif yaparken evin dışını da ölçüyoruz, aksi halde araç boyutu yanlış çıkıyor.",
@@ -805,7 +805,7 @@ export const istanbulDistricts: District[] = [
     name: "Pendik",
     side: "Anadolu Yakası",
     intro:
-      "Pendik; Kurtköy ve Kaynarca gibi geniş semtleriyle hem konut hem sanayi barındıran büyük bir ilçedir. Sabiha Gökçen'e yakın Pendik'te konut ve ofis taşımalarında deneyimliyiz.",
+      "Pendik; Kurtköy ve Kaynarca gibi geniş semtleriyle hem konut hem sanayi barındıran büyük bir ilçedir. Sabiha Gökçen'e yakın Pendik'te konut ve ofis taşımaları yapıyoruz.",
     neighborhoods: ["Kaynarca", "Çamçeşme", "Velibaba", "Kurtköy", "Güzelyalı"],
     body: [
       "Pendik'i bir uçtan bir uca geçmek başlı başına iş. Sahilde Güzelyalı, Batı ve Doğu mahalleleri, marina çevresindeki yeni bloklar var; kuzeye doğru çıktıkça Kaynarca, Velibaba, Şeyhli ve en sonunda Kurtköy geliyor. Kurtköy tarafında Sabiha Gökçen, teknoloji bölgesi ve son yılların site projeleri sıralanıyor. Havalimanı çevresine taşınanlar genelde iş nedeniyle geliyor; sahil tarafında ise aile taşınmaları ağırlıkta. İki nokta arası uzun bir yol, bina tipi ise tamamen farklı. Pendik evden eve nakliyat işinde ilk netleştirdiğimiz şey bu yüzden adresin sahil hattında mı yoksa TEM'e yakın kuzey kesimde mi olduğu; araç seçimi de saat planı da buna göre değişiyor.",
@@ -955,7 +955,7 @@ export const istanbulDistricts: District[] = [
     name: "Şile",
     side: "Anadolu Yakası",
     intro:
-      "Şile; Karadeniz kıyısındaki yazlıkları ve doğasıyla bilinen bir ilçedir. Şile'de özellikle yazlık ev taşımalarında deneyimli ekibimizle hizmet veriyoruz.",
+      "Şile; Karadeniz kıyısındaki yazlıkları ve doğasıyla bilinen bir ilçedir. Şile'de özellikle yazlık ev taşımalarında hizmet veriyoruz.",
     neighborhoods: ["Ağva", "Çayırbaşı", "Balibey", "Kumbaba", "Hacıllı"],
     body: [
       "Şile İstanbul'un içinde ama şehirden uzakta. Karadeniz kıyısındaki merkez, Anadolu Yakası'nın iç ilçelerinden yola çıkan bir araç için ciddi bir mesafe; Şile Otoyolu yolu kısalttı ama gene de günün önemli bir bölümünü alıyor. Ağva ve köyler tarafına geçtiğinizde yol daralıyor, kıvrımlı orman yollarına giriyorsunuz; büyük araçla oralara girmek her zaman mümkün olmuyor. Ekip günün büyük bölümünü yolda geçirdiği için araç, ekipman ve kişi sayısı baştan doğru belirlenmek zorunda. Yol tarifini önceden paylaşmanız da işi hızlandırıyor; bazı adresleri bulmak bile burada zaman alıyor. Şile evden eve nakliyat işinde en kritik konu bu yüzden mesafe planı: hangi araçla, hangi saatte çıkılacak ve iş tek seferde bitecek mi.",
@@ -980,7 +980,7 @@ export const istanbulDistricts: District[] = [
     name: "Adalar",
     side: "Anadolu Yakası",
     intro:
-      "Adalar; Büyükada, Heybeliada ve Burgazada'dan oluşan, araç trafiğinin kısıtlı olduğu özel bir ilçedir. Adalar'a taşıma, feribot ve ada içi lojistik nedeniyle önceden planlama gerektirir; bu konuda deneyimliyiz.",
+      "Adalar; Büyükada, Heybeliada ve Burgazada'dan oluşan, araç trafiğinin kısıtlı olduğu özel bir ilçedir. Adalar'a taşıma, feribot ve ada içi lojistik nedeniyle önceden planlama gerektirir; planı sizinle birlikte baştan kuruyoruz.",
     neighborhoods: ["Büyükada", "Heybeliada", "Burgazada", "Kınalıada", "Maden"],
     body: [
       "Adalar'a taşınmak İstanbul'un hiçbir ilçesine benzemiyor. Büyükada, Heybeliada, Burgazada ve Kınalıada'da motorlu araç kullanımı kısıtlı; nakliye kamyonunu adaya çıkarıp kapıya yanaştırmak diye bir seçenek yok. Eşya karşı kıyıda yükleniyor, deniz yoluyla adaya geçiyor, iskelede aktarılıyor ve ada içinde elektrikli araç ya da el arabasıyla eve ulaşıyor. Karada tek parça olan iş burada üç ayrı aşamaya bölünüyor ve her aşamanın kendi saati var. Adalar evden eve nakliyat planı bu yüzden gün üzerinden değil, saat üzerinden kuruluyor. Tarihi erken belirlemek gerekiyor, çünkü deniz ayağı bir günde kurulmuyor; kışın hava koşulları planı daha da sıkı tutmayı gerektiriyor.",
