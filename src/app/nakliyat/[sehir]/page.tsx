@@ -3,14 +3,17 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin, ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
+import SectionHeading from "@/components/SectionHeading";
 import ServicesGrid from "@/components/ServicesGrid";
 import WhyUs from "@/components/WhyUs";
 import CtaSection from "@/components/CtaSection";
+import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
 import { cities, getCityBySlug, citySlugByName } from "@/lib/cities";
 import { istanbulDistricts } from "@/lib/istanbul-districts";
 import { fetchServices } from "@/lib/fetchers";
-import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
+import { serviceSchema, breadcrumbSchema, faqSchemaFor } from "@/lib/schema";
+import { bulunmaHali } from "@/lib/tr-ek";
 
 export function generateStaticParams() {
   return cities.map((c) => ({ sehir: c.slug }));
@@ -58,8 +61,10 @@ export default async function CityPage({
             name: `${city.name} Evden Eve Nakliyat`,
             description: city.metaDescription,
             path,
+            area: city.name,
           }),
           breadcrumbSchema(breadcrumb),
+          faqSchemaFor(city.faqs),
         ]}
       />
       <PageHero
@@ -68,7 +73,7 @@ export default async function CityPage({
         breadcrumb={breadcrumb}
       />
 
-      {/* Özgün giriş metni */}
+      {/* Özgün giriş + gövde metni */}
       <section className="container-x py-14 lg:py-16">
         <div className="max-w-3xl space-y-4 text-lg leading-relaxed text-ink-soft">
           {city.intro.map((p, i) => (
@@ -76,11 +81,36 @@ export default async function CityPage({
           ))}
         </div>
 
+        <div className="mt-8 max-w-3xl space-y-5">
+          {city.body.map((paragraph, i) => (
+            <p key={i} className="leading-relaxed text-ink-soft">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+
+        <div className="mt-12">
+          <h2 className="font-heading text-xl font-bold text-ink">
+            {bulunmaHali(city.name)} taşımada dikkat ettiklerimiz
+          </h2>
+          <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {city.notes.map((note) => (
+              <div
+                key={note.title}
+                className="rounded-2xl border border-line bg-white p-6 shadow-sm"
+              >
+                <h3 className="font-heading text-base font-bold text-ink">{note.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{note.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* İlçeler — İstanbul'da her ilçe kendi sayfasına linklenir */}
         {city.slug === "istanbul" ? (
-          <div className="mt-10">
+          <div className="mt-12">
             <h2 className="font-heading text-xl font-bold text-ink">
-              İstanbul'da hizmet verdiğimiz ilçeler
+              {bulunmaHali(city.name)} hizmet verdiğimiz ilçeler
             </h2>
             <p className="mt-1 text-sm text-muted">İlçenize özel sayfa için tıklayın.</p>
             <ul className="mt-4 flex flex-wrap gap-2.5">
@@ -100,9 +130,9 @@ export default async function CityPage({
         ) : (
           city.districts &&
           city.districts.length > 0 && (
-            <div className="mt-10">
+            <div className="mt-12">
               <h2 className="font-heading text-xl font-bold text-ink">
-                {city.name}'da hizmet verdiğimiz ilçeler
+                {bulunmaHali(city.name)} hizmet verdiğimiz ilçeler
               </h2>
               <ul className="mt-4 flex flex-wrap gap-2.5">
                 {city.districts.map((d) => (
@@ -152,6 +182,15 @@ export default async function CityPage({
 
       <ServicesGrid services={services} />
       <WhyUs />
+
+      <section className="container-x py-16 lg:py-20">
+        <SectionHeading
+          eyebrow="Sık Sorulanlar"
+          title={`${city.name} nakliyatı hakkında merak edilenler`}
+        />
+        <Faq faqs={city.faqs} className="mt-10" />
+      </section>
+
       <CtaSection />
     </>
   );

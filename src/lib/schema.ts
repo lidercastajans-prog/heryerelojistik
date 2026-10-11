@@ -105,7 +105,13 @@ export function faqSchemaFor(items: readonly Faq[]) {
   };
 }
 
-export function serviceSchema(opts: { name: string; description: string; path: string }) {
+export function serviceSchema(opts: {
+  name: string;
+  description: string;
+  path: string;
+  /** Şehir/ilçe sayfalarında hizmet bölgesi yalnız o yer ("Kocaeli", "Beşiktaş, İstanbul"); yoksa Türkiye geneli. */
+  area?: string;
+}) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -114,10 +120,12 @@ export function serviceSchema(opts: { name: string; description: string; path: s
     description: opts.description,
     url: `${site.url}${opts.path}`,
     provider: { "@id": `${site.url}/#organization` },
-    areaServed: [
-      { "@type": "Country", name: "Türkiye" },
-      ...featuredCities.map((c) => ({ "@type": "City", name: c })),
-    ],
+    areaServed: opts.area
+      ? { "@type": "AdministrativeArea", name: opts.area }
+      : [
+          { "@type": "Country", name: "Türkiye" },
+          ...featuredCities.map((c) => ({ "@type": "City", name: c })),
+        ],
   };
 }
 

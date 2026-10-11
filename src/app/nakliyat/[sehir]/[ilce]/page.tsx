@@ -12,6 +12,7 @@ import JsonLd from "@/components/JsonLd";
 import { istanbulDistricts, getIstanbulDistrict } from "@/lib/istanbul-districts";
 import { fetchServices } from "@/lib/fetchers";
 import { serviceSchema, breadcrumbSchema, faqSchemaFor } from "@/lib/schema";
+import { bulunmaHali, tamlayanHali } from "@/lib/tr-ek";
 
 // Şimdilik yalnızca İstanbul ilçeleri. İleride başka iller eklenebilir.
 export function generateStaticParams() {
@@ -72,6 +73,7 @@ export default async function DistrictPage({
             name: `${district.name} Evden Eve Nakliyat`,
             description: district.intro,
             path,
+            area: `${district.name}, İstanbul`,
           }),
           breadcrumbSchema(breadcrumb),
           faqSchemaFor(district.faqs),
@@ -96,7 +98,7 @@ export default async function DistrictPage({
 
         <div className="mt-12">
           <h2 className="font-heading text-xl font-bold text-ink">
-            {district.name}&apos;te taşımada dikkat ettiklerimiz
+            {bulunmaHali(district.name)} taşımada dikkat ettiklerimiz
           </h2>
           <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {district.notes.map((note) => (
@@ -113,7 +115,7 @@ export default async function DistrictPage({
 
         <div className="mt-12">
           <h2 className="font-heading text-xl font-bold text-ink">
-            {district.name}&apos;da hizmet verdiğimiz semtler
+            {bulunmaHali(district.name)} hizmet verdiğimiz semtler
           </h2>
           <ul className="mt-4 flex flex-wrap gap-2.5">
             {district.neighborhoods.map((n) => (
@@ -127,7 +129,7 @@ export default async function DistrictPage({
             ))}
           </ul>
           <p className="mt-4 text-sm text-muted">
-            Listede olmayan mahalleler dahil {district.name}&apos;ın tamamına hizmet veriyoruz.
+            Listede olmayan mahalleler dahil {tamlayanHali(district.name)} tamamına hizmet veriyoruz.
           </p>
         </div>
       </section>

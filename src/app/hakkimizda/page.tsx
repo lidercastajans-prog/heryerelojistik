@@ -13,7 +13,7 @@ import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
-  description: `${site.name} — ${site.foundedYear}'dan bu yana sigortalı evden eve nakliyat ve şehirler arası yük taşımacılığında güvenilir çözüm ortağınız.`,
+  description: `${site.name} — ${site.foundedYear} yılından bu yana sigortalı evden eve nakliyat ve şehirler arası yük taşımacılığında güvenilir çözüm ortağınız.`,
   alternates: { canonical: "/hakkimizda" },
 };
 
