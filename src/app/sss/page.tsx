@@ -10,7 +10,7 @@ import { faqSchema, breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Sık Sorulan Sorular",
   description:
-    "Nakliyat süreci, fiyatlandırma, sigorta, paketleme ve depolama hakkında en çok merak edilen sorular ve yanıtları.",
+    "Nakliyat süreci, fiyatlandırma, eşyanın taşımada nasıl korunduğu, paketleme ve asansörlü taşıma hakkında sık sorulan sorular.",
   alternates: { canonical: "/sss" },
 };
 

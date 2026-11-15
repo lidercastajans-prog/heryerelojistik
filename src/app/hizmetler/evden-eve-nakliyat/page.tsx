@@ -12,7 +12,7 @@ const service = getServiceBySlug(SLUG)!;
 export const metadata: Metadata = {
   title: "Evden Eve Nakliyat",
   description:
-    "Sigortalı, asansörlü ve profesyonel evden eve nakliyat. Paketleme, montaj-demontaj ve depolama dahil tam hizmet. Ücretsiz keşif ve net fiyat.",
+    "İstanbul ve Marmara'da asansörlü evden eve nakliyat. Paketleme, söküm-montaj ve kurulum. Fotoğraf gönderin, yazılı fiyat alın; teklif ücretsiz.",
   alternates: { canonical: `/hizmetler/${SLUG}` },
 };
 
@@ -34,7 +34,7 @@ export default function Page() {
       />
       <PageHero
         title={service.title}
-        description="Eşyalarınızı tek bir çizik bile olmadan yeni evinize taşıyoruz — paketlemeden montaja kadar her şey dahil."
+        description="Paketleme, asansörlü indirme, taşıma ve yeni evde kurulum. Eşyanız battaniye, streç ve kayışla korunarak taşınır."
         breadcrumb={[
           { name: "Ana Sayfa", path: "/" },
           { name: "Hizmetler", path: "/#hizmetler" },

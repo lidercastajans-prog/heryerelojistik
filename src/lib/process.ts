@@ -19,14 +19,14 @@ export const processSteps: ProcessStep[] = [
   {
     step: 2,
     icon: "Clock",
-    title: "Keşif & Planlama",
-    text: "Yerinde veya görüntülü keşifle net fiyat ve uygun taşıma gününü belirleyelim.",
+    title: "Fiyat & Planlama",
+    text: "Eşyalarınızı fotoğraf veya görüntülü görüşmeyle görüp yazılı fiyatı ve taşıma gününü belirleyelim.",
   },
   {
     step: 3,
     icon: "Package",
     title: "Paketleme & Taşıma",
-    text: "Uzman ekibimiz eşyalarınızı paketler, asansörle indirir ve güvenle taşır.",
+    text: "Ekibimiz eşyalarınızı paketler, asansörle indirir, araçta sabitleyerek taşır.",
   },
   {
     step: 4,

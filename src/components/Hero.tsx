@@ -53,7 +53,7 @@ export default function Hero() {
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur">
             <ShieldCheck className="h-4 w-4 text-accent-400" aria-hidden />
-            Sigortalı · Asansörlü · 7/24 Hizmet
+            İstanbul Merkezli · Asansörlü · 7/24 İletişim
           </span>
 
           <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-6xl">
@@ -65,12 +65,12 @@ export default function Hero() {
           </h1>
 
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/80">
-            Evden eve nakliyat ve şehirler arası yük taşımacılığında sigortalı,
-            asansörlü ve planlı taşıma. Saniyeler içinde online teklif alın.
+            İstanbul ve Marmara'da evden eve nakliyat, diğer illere şehirler arası taşıma.
+            Eşyanız paketlenip sabitlenerek taşınır. Saniyeler içinde online teklif alın.
           </p>
 
           <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-white/90">
-            <li className="flex items-center gap-2"><ShieldCheck className="h-5 w-5 text-accent-400" aria-hidden /> Sigortalı Taşıma</li>
+            <li className="flex items-center gap-2"><ShieldCheck className="h-5 w-5 text-accent-400" aria-hidden /> Özenli Paketleme</li>
             <li className="flex items-center gap-2"><ArrowUpDown className="h-5 w-5 text-accent-400" aria-hidden /> Asansörlü Hizmet</li>
             <li className="flex items-center gap-2"><Clock className="h-5 w-5 text-accent-400" aria-hidden /> 7/24 Destek</li>
           </ul>
@@ -93,12 +93,12 @@ export default function Hero() {
             <span className="grid h-7 w-7 place-items-center rounded-full bg-accent-100 text-accent-600">
               <MapPin className="h-4 w-4" aria-hidden />
             </span>
-            81 İle Hizmet
+            İstanbul ve Marmara
           </div>
           {/* Yüzen rozet — puan */}
           <div className="floaty absolute -bottom-5 -right-3 z-10 hidden items-center gap-2 rounded-2xl bg-white px-4 py-2.5 text-sm font-bold text-ink shadow-xl sm:flex">
             <BadgeCheck className="h-5 w-5 text-accent-600" aria-hidden />
-            Ücretsiz Keşif
+            Fotoğrafla Hızlı Fiyat
           </div>
 
           <form
@@ -142,7 +142,7 @@ export default function Hero() {
               <ArrowRight className="h-5 w-5" aria-hidden />
             </button>
             <p className="mt-3 text-center text-xs text-muted">
-              En kısa sürede dönüş yapıyoruz · Ücretsiz keşif
+              En kısa sürede dönüş yapıyoruz · Teklif almak ücretsiz
             </p>
           </form>
         </div>

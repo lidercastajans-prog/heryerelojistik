@@ -45,17 +45,17 @@ export default function OpengraphImage() {
         {/* Ana mesaj */}
         <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div style={{ fontSize: 66, fontWeight: 800, lineHeight: 1.05, maxWidth: 980 }}>
-            Türkiye&apos;nin her yerine güvenli taşımacılık
+            İstanbul merkezli evden eve nakliyat
           </div>
           <div style={{ fontSize: 32, opacity: 0.92 }}>
-            Evden eve nakliyat · Şehirler arası yük · Sigortalı · Asansörlü
+            Evden eve nakliyat · Şehirler arası yük · Paketleme · Asansörlü
           </div>
         </div>
 
         {/* Alt bilgi */}
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 30, opacity: 0.95 }}>
           <div>heryerelojistik.com</div>
-          <div>Türkiye geneli · Sigortalı taşımacılık</div>
+          <div>İstanbul ve Marmara · Şehirler arası</div>
         </div>
       </div>
     ),

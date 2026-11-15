@@ -39,9 +39,9 @@ export function organizationSchema() {
       addressCountry: "TR",
     },
     hasMap: MAPS_URL,
+    // Düzenli hizmet: İstanbul + Marmara'daki 5 il. Diğer illere şehirler arası taşıma talep üzerine.
     areaServed: [
-      { "@type": "Country", name: "Türkiye" },
-      ...featuredCities.map((c) => ({ "@type": "City", name: c })),
+      ...featuredCities.map((c) => ({ "@type": "AdministrativeArea", name: c })),
       // Hizmet verdiğimiz İstanbul ilçeleri — yerel aramada varlık (entity) eşleşmesi için.
       ...istanbulDistricts.map((d) => ({
         "@type": "AdministrativeArea",
@@ -68,9 +68,7 @@ export function organizationSchema() {
       "Şehirler arası yük taşımacılığı",
       "Asansörlü taşımacılık",
       "Ofis ve işyeri taşıma",
-      "Eşya depolama",
       "Paketleme ve montaj",
-      "Sigortalı taşımacılık",
     ],
     sameAs: [site.social.instagram, site.social.facebook, site.social.linkedin].filter(Boolean),
   };
@@ -109,8 +107,10 @@ export function serviceSchema(opts: {
   name: string;
   description: string;
   path: string;
-  /** Şehir/ilçe sayfalarında hizmet bölgesi yalnız o yer ("Kocaeli", "Beşiktaş, İstanbul"); yoksa Türkiye geneli. */
+  /** Şehir/ilçe sayfalarında hizmet bölgesi yalnız o yer ("Kocaeli", "Beşiktaş, İstanbul"); yoksa düzenli hizmet verilen iller. */
   area?: string;
+  /** Şehirler arası hizmette Türkiye de eklenir (talep üzerine diğer iller). */
+  nationwide?: boolean;
 }) {
   return {
     "@context": "https://schema.org",
@@ -123,8 +123,8 @@ export function serviceSchema(opts: {
     areaServed: opts.area
       ? { "@type": "AdministrativeArea", name: opts.area }
       : [
-          { "@type": "Country", name: "Türkiye" },
-          ...featuredCities.map((c) => ({ "@type": "City", name: c })),
+          ...featuredCities.map((c) => ({ "@type": "AdministrativeArea", name: c })),
+          ...(opts.nationwide ? [{ "@type": "Country", name: "Türkiye" }] : []),
         ],
   };
 }

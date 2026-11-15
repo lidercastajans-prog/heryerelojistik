@@ -8,8 +8,8 @@ export type Stat = {
 };
 
 export const stats: Stat[] = [
-  { value: 81, label: "İl Hizmet Ağı" },
-  { value: 100, suffix: "%", label: "Sigortalı Taşıma" },
-  { value: 7, suffix: "/24", label: "Kesintisiz Destek" },
-  { value: 0, suffix: "₺", label: "Keşif Ücreti" },
+  { value: 6, label: "İlde Düzenli Hizmet" },
+  { value: 2, label: "Yaka: Avrupa ve Anadolu" },
+  { value: 7, suffix: "/24", label: "Telefon ve WhatsApp" },
+  { value: 1, label: "Mesajla Teklif" },
 ];

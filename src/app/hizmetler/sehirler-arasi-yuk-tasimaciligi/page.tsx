@@ -12,7 +12,7 @@ const service = getServiceBySlug(SLUG)!;
 export const metadata: Metadata = {
   title: "Şehirler Arası Yük Taşımacılığı",
   description:
-    "Parsiyel ve komple yük taşımacılığı; 81 ile sigortalı taşıma, planlı yükleme ve teslim. Bireysel ve kurumsal çözümler.",
+    "İstanbul'dan diğer illere parsiyel ve komple yük taşımacılığı. Planlı yükleme, sabitlenmiş yük ve teslim. Gideceği şehri yazın, fiyatı hemen konuşalım.",
   alternates: { canonical: `/hizmetler/${SLUG}` },
 };
 
@@ -24,7 +24,7 @@ export default function Page() {
     <>
       <JsonLd
         data={[
-          serviceSchema({ name: service.title, description: service.excerpt, path }),
+          serviceSchema({ name: service.title, description: service.excerpt, path, nationwide: true }),
           breadcrumbSchema([
             { name: "Ana Sayfa", path: "/" },
             { name: "Hizmetler", path: "/#hizmetler" },
@@ -34,7 +34,7 @@ export default function Page() {
       />
       <PageHero
         title={service.title}
-        description="Tek paletten komple tıra kadar, yükünüzü Türkiye'nin dört bir yanına güvenle ve zamanında ulaştırıyoruz."
+        description="Tek paletten komple araca kadar, İstanbul ve Marmara'dan diğer illere yük taşıyoruz. Tarihi ve aracı birlikte planlıyoruz."
         breadcrumb={[
           { name: "Ana Sayfa", path: "/" },
           { name: "Hizmetler", path: "/#hizmetler" },

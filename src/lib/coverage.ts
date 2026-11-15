@@ -1,20 +1,26 @@
 /** Hizmet bölgeleri (statik). */
 
-/** Öne çıkan iller (anasayfada vurgulanır). */
+/** Düzenli hizmet verilen iller (anasayfada vurgulanır, her birinin kendi sayfası var). */
 export const featuredCities: string[] = [
   "İstanbul",
+  "Kocaeli",
+  "Tekirdağ",
+  "Bursa",
+  "Sakarya",
+  "Yalova",
+];
+
+/** Şehirler arası taşımada sık sorulan iller — talep üzerine, düzenli hizmet bölgesi değil. */
+export const intercityCities: string[] = [
   "Ankara",
   "İzmir",
-  "Bursa",
   "Antalya",
-  "Kocaeli",
   "Adana",
   "Konya",
   "Gaziantep",
-  "Tekirdağ",
   "Balıkesir",
   "Muğla",
 ];
 
 export const coverageNote =
-  "Türkiye'nin 81 iline evden eve nakliyat ve yük taşımacılığı hizmeti veriyoruz.";
+  "İstanbul'un iki yakasında ve Kocaeli, Tekirdağ, Bursa, Sakarya, Yalova'da düzenli taşıma yapıyoruz. Diğer illere şehirler arası taşıma için gideceğiniz yeri yazın, planlayalım.";

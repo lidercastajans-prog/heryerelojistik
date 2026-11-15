@@ -8,9 +8,9 @@ import { cities } from "@/lib/cities";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Hizmet Bölgeleri — Türkiye Geneli Nakliyat",
+  title: "Hizmet Bölgeleri — İstanbul ve Marmara Nakliyat",
   description:
-    "İstanbul başta olmak üzere Türkiye'nin 81 iline evden eve nakliyat ve şehirler arası yük taşımacılığı. Bölgenizdeki hizmetlerimizi inceleyin.",
+    "İstanbul, Kocaeli, Tekirdağ, Bursa, Sakarya ve Yalova'da evden eve nakliyat; diğer illere şehirler arası taşıma. Bölgenizi seçin, teklif alın.",
   alternates: { canonical: "/nakliyat" },
 };
 
@@ -25,7 +25,7 @@ export default function NakliyatHubPage() {
       <JsonLd data={breadcrumbSchema(breadcrumb)} />
       <PageHero
         title="Hizmet Bölgeleri"
-        description="İstanbul merkezli olarak Türkiye'nin 81 iline evden eve nakliyat ve yük taşımacılığı hizmeti veriyoruz. Aşağıdan bölgenizi seçin."
+        description="İstanbul'un iki yakasında ve Marmara'daki beş ilde düzenli taşıma yapıyoruz. Diğer illere şehirler arası taşıma talep üzerine. Aşağıdan bölgenizi seçin."
         breadcrumb={breadcrumb}
       />
 
@@ -55,8 +55,9 @@ export default function NakliyatHubPage() {
         </div>
 
         <p className="mt-10 rounded-3xl border border-line bg-surface p-6 text-center text-muted">
-          Bölgeniz listede yok mu? Türkiye'nin <strong className="text-ink">81 iline</strong> hizmet
-          veriyoruz —{" "}
+          Bölgeniz listede yok mu? Diğer illere{" "}
+          <strong className="text-ink">şehirler arası taşıma</strong> yapıyoruz; gideceğiniz yeri yazın,
+          uygunluğu ve fiyatı konuşalım —{" "}
           <Link href="/teklif-al" className="font-bold text-brand-700 hover:text-accent-600">
             ücretsiz teklif alın
           </Link>{" "}

@@ -15,10 +15,10 @@ export type NavItem = {
 export const site = {
   name: "Her Yere Lojistik",
   legalName: "Her Yere Lojistik Nakliyat ve Taşımacılık",
-  tagline: "Türkiye'nin her yerine güvenli, sigortalı taşımacılık.",
+  tagline: "İstanbul merkezli evden eve nakliyat ve şehirler arası taşımacılık.",
   description:
-    "Her Yere Lojistik — Türkiye'nin her yerine evden eve nakliyat ve şehirler arası " +
-    "yük taşımacılığı. Sigortalı, asansörlü ve zamanında teslimat. Saniyeler içinde online teklif alın.",
+    "Her Yere Lojistik — İstanbul ve Marmara'da evden eve nakliyat, diğer illere şehirler arası " +
+    "yük taşımacılığı. Özenli paketleme, asansörlü taşıma. Saniyeler içinde online teklif alın.",
 
   // Canlı alan adı
   url: "https://heryerelojistik.com",

@@ -22,7 +22,7 @@ export default function CtaSection() {
             Taşınmaya hazır mısınız?
           </h2>
           <p className="mt-4 text-lg text-white/90">
-            Ücretsiz keşif ve net fiyat için hemen teklif alın. Gerisini biz hallederiz.
+            Eşyalarınızın fotoğrafını gönderin, yazılı fiyatı hızlıca iletelim. Teklif almak ücretsiz.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link

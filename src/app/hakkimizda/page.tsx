@@ -13,13 +13,13 @@ import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
-  description: `${site.name} — ${site.foundedYear} yılından bu yana sigortalı evden eve nakliyat ve şehirler arası yük taşımacılığında güvenilir çözüm ortağınız.`,
+  description: `${site.name} — ${site.foundedYear} yılında İstanbul Kağıthane'de kurulan, evden eve nakliyat ve şehirler arası yük taşımacılığı yapan bir firma.`,
   alternates: { canonical: "/hakkimizda" },
 };
 
 const VALUES = [
-  { icon: Target, title: "Misyonumuz", text: "Her taşımayı, kendi eşyamızmış gibi özen ve titizlikle, zamanında ve hasarsız teslim etmek." },
-  { icon: Eye, title: "Vizyonumuz", text: "Türkiye'nin en güvenilen ve teknolojiyle desteklenen nakliyat markası olmak." },
+  { icon: Target, title: "Misyonumuz", text: "Her taşımayı kendi eşyamızmış gibi özenle paketleyip, konuştuğumuz saatte teslim etmek." },
+  { icon: Eye, title: "Vizyonumuz", text: "İstanbul ve Marmara'da, taşınacak biri olduğunda akla ilk gelen firmalardan biri olmak." },
   { icon: HeartHandshake, title: "Değerlerimiz", text: "Dürüstlük, şeffaf fiyat, müşteri memnuniyeti ve işine saygı duyan bir ekip." },
 ];
 
@@ -54,13 +54,14 @@ export default async function HakkimizdaPage() {
               hizmet veriyoruz.
             </p>
             <p>
-              Eğitimli ekibimiz, modern araç filomuz ve asansörlü taşıma ekipmanlarımızla
-              eşyalarınızı ilk günkü gibi koruyoruz. Tüm taşımalarımız sigorta güvencesi altında;
-              fiyatlarımız ise keşif sonrası net ve şeffaf.
+              Eşyaları battaniye, streç film ve koliyle paketliyor, araçta kayışla sabitliyoruz.
+              Yüksek katlarda mobil asansör kullanıyoruz. Fiyatı, eşyalarınızı fotoğraf veya
+              görüntülü görüşmeyle gördükten sonra yazılı olarak veriyoruz.
             </p>
             <p>
-              Türkiye'nin 81 iline evden eve nakliyat ve yük taşımacılığı hizmeti sunuyor,
-              her taşımada müşteri memnuniyetini önceliğimiz olarak görüyoruz.
+              Merkezimiz Kağıthane'de. İstanbul'un iki yakasında ve Kocaeli, Tekirdağ, Bursa,
+              Sakarya, Yalova'da düzenli taşıma yapıyor; diğer illere şehirler arası taşımayı
+              talep üzerine planlıyoruz.
             </p>
           </div>
 

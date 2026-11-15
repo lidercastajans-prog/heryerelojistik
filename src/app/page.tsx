@@ -39,7 +39,7 @@ export default async function HomePage() {
       <ServicesGrid services={services} />
       <WhyUs />
       <ProcessSteps steps={steps} />
-      <CoverageAreas cities={coverage.cities} note={coverage.note} />
+      <CoverageAreas cities={coverage.cities} intercity={coverage.intercity} note={coverage.note} />
 
       {/* Galeri önizleme */}
       <section className="container-x py-20 lg:py-28">
@@ -47,7 +47,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Galeri"
             title="İşimizi gururla sergiliyoruz"
-            description="Araç filomuzdan paketleme ve taşıma anlarına kadar bir bakış."
+            description="Paketlemeden yüklemeye, taşımanın nasıl ilerlediğine dair bir bakış."
           />
           <Link
             href="/galeri"

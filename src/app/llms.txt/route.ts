@@ -17,7 +17,7 @@ export function GET() {
   lines.push("");
   lines.push(`> ${site.description}`);
   lines.push("");
-  lines.push(`${site.legalName}, ${site.foundedYear} yılından bu yana faaliyet gösteren bir nakliyat ve lojistik firmasıdır. Türkiye'nin 81 iline evden eve nakliyat ve şehirler arası yük taşımacılığı hizmeti verir. Tüm taşımalar sigortalıdır; asansörlü taşıma, paketleme, montaj ve depolama hizmetleri sunulur.`);
+  lines.push(`${site.legalName}, ${site.foundedYear} yılından bu yana faaliyet gösteren bir nakliyat ve lojistik firmasıdır. Merkezi İstanbul Kağıthane'dedir. İstanbul'un iki yakasında ve Kocaeli, Tekirdağ, Bursa, Sakarya, Yalova'da düzenli evden eve nakliyat yapar; diğer illere şehirler arası taşımayı talep üzerine planlar. Paketleme, mobil asansörle taşıma, söküm ve montaj yapılır.`);
   lines.push("");
 
   lines.push("## Hizmetler");
@@ -28,7 +28,7 @@ export function GET() {
 
   lines.push("## Hizmet Bölgeleri");
   lines.push(
-    `Türkiye geneli 81 il. Öne çıkan iller: ${featuredCities.join(", ")}.`
+    `Düzenli hizmet: ${featuredCities.join(", ")}. Diğer iller: şehirler arası taşıma, talep üzerine.`
   );
   lines.push("");
 
@@ -42,12 +42,12 @@ export function GET() {
   lines.push("");
 
   lines.push("## Öne Çıkan Bilgiler");
-  lines.push("- Sigortalı taşımacılık (tüm taşımalar teminat altında)");
-  lines.push("- Asansörlü taşıma hizmeti");
-  lines.push("- Ücretsiz keşif ve yazılı, net fiyat (sürpriz ek ücret yok)");
+  lines.push("- Paketleme: battaniye, streç film, koli; araçta kayışla sabitleme");
+  lines.push("- Yüksek katlarda mobil asansörle taşıma");
+  lines.push("- Fotoğraf veya görüntülü görüşmeyle yazılı fiyat; teklif istemek ücretsiz");
   lines.push("- Parsiyel (paylaşımlı) ve komple yük taşımacılığı");
   lines.push("- Şehirler arası sevkiyatlarda yola çıkış ve tahmini varış bilgilendirmesi");
-  lines.push("- 7/24 müşteri destek hattı");
+  lines.push("- 7/24 telefon ve WhatsApp hattı");
   lines.push("");
 
   lines.push("## Sık Sorulan Sorular");

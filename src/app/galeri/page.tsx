@@ -8,7 +8,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Galeri",
-  description: "Araç filomuz, paketleme, asansörlü taşıma ve depolama hizmetlerimizden kareler.",
+  description: "Paketleme, asansörlü taşıma, montaj ve yükleme aşamalarından kareler.",
   alternates: { canonical: "/galeri" },
 };
 
@@ -23,7 +23,7 @@ export default function GaleriPage() {
       />
       <PageHero
         title="Galeri"
-        description="İşimizi nasıl yaptığımıza dair bir bakış: araç filomuz, paketleme özenimiz ve taşıma anlarımız."
+        description="Bir taşınmanın nasıl ilerlediğine dair bir bakış: paketleme, asansörlü indirme, yükleme ve kurulum."
         breadcrumb={[
           { name: "Ana Sayfa", path: "/" },
           { name: "Galeri", path: "/galeri" },

@@ -3,12 +3,12 @@ import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
 const REASONS = [
-  { icon: ShieldCheck, title: "Sigortalı Taşıma", text: "Tüm eşyalarınız taşıma boyunca sigorta güvencesi altında." },
-  { icon: ArrowUpDown, title: "Asansörlü Ekipman", text: "Yüksek katlarda büyük eşyayı merdivene sokmadan, cepheden taşıma." },
+  { icon: ShieldCheck, title: "Özenli Taşıma", text: "Battaniye, streç film ve sabitleme kayışıyla eşya yolda yerinden oynamaz." },
+  { icon: ArrowUpDown, title: "Mobil Asansör", text: "Yüksek katlarda büyük eşyayı merdivene sokmadan, cepheden taşıma." },
   { icon: Users, title: "Özenli Ekip", text: "Paketlemeden kuruluma kadar eşyanıza kendi eşyamız gibi davranıyoruz." },
-  { icon: BadgeDollarSign, title: "Net Fiyat", text: "Keşif sonrası yazılı, sürpriz çıkarmayan şeffaf fiyat." },
+  { icon: BadgeDollarSign, title: "Net Fiyat", text: "Fotoğraf veya görüntülü görüşmeyle eşyayı görüp yazılı fiyat veriyoruz." },
   { icon: Clock, title: "Planlı Teslim", text: "Yükleme ve teslim saatini baştan planlıyor, değişiklik olursa önceden haber veriyoruz." },
-  { icon: Headphones, title: "7/24 Destek", text: "Sorularınız için her an ulaşabileceğiniz müşteri hattı." },
+  { icon: Headphones, title: "7/24 Destek", text: "Telefon ve WhatsApp hattımıza günün her saati yazabilirsiniz." },
 ];
 
 export default function WhyUs() {

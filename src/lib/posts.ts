@@ -23,7 +23,7 @@ export const posts: Post[] = [
     slug: "istanbul-evden-eve-nakliyat-ilceler",
     title: "İstanbul Evden Eve Nakliyat: Tüm İlçeler Rehberi (Avrupa & Anadolu Yakası)",
     excerpt:
-      "İstanbul'un 39 ilçesinde evden eve nakliyat. Avrupa ve Anadolu yakasının tüm ilçelerinde sigortalı, asansörlü taşıma ve ilçeye özel pratik bilgiler.",
+      "İstanbul'un 39 ilçesinde evden eve nakliyat. Avrupa ve Anadolu yakasının tüm ilçelerinde asansörlü taşıma ve ilçeye özel pratik bilgiler.",
     date: "2026-06-14",
     readMinutes: 9,
     cover: uns("photo-1485575301924-6891ef935dcd", 1200),
@@ -36,14 +36,14 @@ export const posts: Post[] = [
       {
         heading: "Avrupa Yakası İlçeleri",
         paragraphs: [
-          "Avrupa yakasının merkezi semtlerinden yeni yerleşim bölgelerine kadar tüm ilçelerde asansörlü ve sigortalı taşıma yapıyoruz:",
+          "Avrupa yakasının merkezi semtlerinden yeni yerleşim bölgelerine kadar tüm ilçelerde asansörlü taşıma yapıyoruz:",
         ],
         bullets: [
           "Bakırköy — sahil hattı, yoğun apartman; asansörlü taşıma sık tercih edilir.",
           "Beşiktaş — merkezi konum, dar sokaklar ve sınırlı otopark; planlı taşıma şart.",
           "Beyoğlu — tarihi doku ve dar sokaklar; uygun araç ve mobil asansör avantaj sağlar.",
           "Şişli — iş ve konut yoğun; yüksek katlı binalarda asansörlü taşıma.",
-          "Kağıthane — merkez ofisimizin bulunduğu ilçe; en hızlı ve ekonomik hizmet.",
+          "Kağıthane — merkez ofisimizin bulunduğu ilçe; ekibe en kısa mesafede.",
           "Sarıyer — geniş yerleşim, villa ve siteler; planlı lojistik gerektirir.",
           "Eyüpsultan — yeni siteler ile eski mahallelerin bir arada olduğu ilçe.",
           "Gaziosmanpaşa — yoğun konut alanı; apartman taşımaları.",
@@ -101,7 +101,7 @@ export const posts: Post[] = [
       {
         heading: "İstanbul'un her ilçesine hizmet",
         paragraphs: [
-          "Yukarıdaki tüm ilçelerde ve mahallelerinde evden eve nakliyat, ofis taşıma, paketleme, asansörlü taşıma ve eşya depolama hizmeti veriyoruz. İlçenize özel net fiyat için ücretsiz keşif talep edebilir, hemen teklif alabilirsiniz.",
+          "Yukarıdaki tüm ilçelerde ve mahallelerinde evden eve nakliyat, ofis taşıma, paketleme ve asansörlü taşıma hizmeti veriyoruz. Eşyalarınızın fotoğrafını gönderin ya da görüntülü görüşelim, ilçenize göre yazılı fiyatı iletelim. Teklif almak ücretsiz.",
         ],
       },
     ],
@@ -135,7 +135,7 @@ export const posts: Post[] = [
       {
         heading: "3. Kat ve asansör durumu",
         paragraphs: [
-          "Yüksek katlar ve asansörsüz binalar iş gücünü ve süreyi artırır. Mobil asansör kullanımı bu durumda hem güvenliği artırır hem de toplam maliyeti dengeleyebilir. Binanızın durumunu keşif sırasında net paylaşmak sürpriz ücretleri önler.",
+          "Yüksek katlar ve asansörsüz binalar iş gücünü ve süreyi artırır. Mobil asansör kullanımı bu durumda hem güvenliği artırır hem de toplam maliyeti dengeleyebilir. Kat ve asansör bilgisini teklif alırken eksiksiz paylaşmak, taşınma günü fiyatın değişmesini önler.",
         ],
       },
       {
@@ -145,9 +145,9 @@ export const posts: Post[] = [
         ],
       },
       {
-        heading: "5. Ek hizmetler ve depolama",
+        heading: "5. Ek hizmetler",
         paragraphs: [
-          "Mobilya söküm-montaj, beyaz eşya bağlantıları ve eşya depolama gibi ek hizmetler fiyata yansır. İhtiyacınız olmayan hizmetleri baştan belirleyerek gereksiz maliyetten kaçınabilirsiniz.",
+          "Mobilya söküm-montaj, beyaz eşya bağlantıları ve ara depolama gibi ek işler fiyata yansır. İhtiyacınız olmayan hizmetleri baştan belirleyerek gereksiz maliyetten kaçınabilirsiniz.",
         ],
       },
       {
@@ -157,15 +157,15 @@ export const posts: Post[] = [
         ],
       },
       {
-        heading: "7. Sigorta",
+        heading: "7. Paketleme ve koruma malzemesi",
         paragraphs: [
-          "Sigortalı taşıma, olası hasarlara karşı sizi korur. Fiyat teklifini değerlendirirken sigorta kapsamının dahil olup olmadığını mutlaka sorun. Her Yere Lojistik'te tüm taşımalar sigorta güvencesi altındadır.",
+          "Teklifler arasında fark çoğu zaman kullanılan malzemeden çıkar. Mobilya battaniyesi, streç film, balonlu naylon ve sabitleme kayışının fiyata dahil olup olmadığını sorun. Ucuz teklifte bu malzemeler eksikse eşyanın yolda zarar görme ihtimali artar.",
         ],
       },
       {
-        heading: "Net fiyat için ücretsiz keşif",
+        heading: "Fotoğrafla hızlı fiyat",
         paragraphs: [
-          "En doğru fiyat, eşyalarınızı gören bir keşifle çıkar. Ücretsiz keşif (yerinde veya görüntülü) sonrası size yazılı ve sürpriz çıkarmayan bir teklif sunuyoruz. Hemen teklif almak için formu doldurabilir veya bizi arayabilirsiniz.",
+          "En doğru fiyat, eşyalarınızı gördükten sonra çıkar. Odaların fotoğrafını gönderin ya da kısa bir görüntülü görüşme yapalım; size yazılı bir teklif iletelim. Teklif almak ücretsiz, formu doldurabilir veya bizi arayabilirsiniz.",
         ],
       },
     ],
@@ -187,7 +187,7 @@ export const posts: Post[] = [
       {
         heading: "Adım adım kontrol listesi",
         bullets: [
-          "Erken planlayın: Taşınma tarihinizden en az 1-2 hafta önce nakliyat firmasıyla görüşün ve keşif yaptırın.",
+          "Erken planlayın: Taşınma tarihinizden en az 1-2 hafta önce nakliyat firmasıyla görüşün, fotoğraf veya görüntülü görüşmeyle fiyat alın.",
           "Eşya eleyin: Kullanmadığınız eşyaları bağışlayın, satın veya atın — daha az eşya, daha düşük maliyet.",
           "Abonelik ve adres güncelleyin: Elektrik, su, doğalgaz, internet ve resmi adres bilgilerinizi planlayın.",
           "Koli ve malzeme temin edin: Kendiniz paketleyecekseniz koli, balonlu naylon ve bant alın; ya da profesyonel paketleme isteyin.",
@@ -211,7 +211,7 @@ export const posts: Post[] = [
     slug: "esya-paketleme-rehberi",
     title: "Eşya Paketleme Rehberi: Eşyalarınızı Doğru Koruyun",
     excerpt:
-      "Kırılacaklardan beyaz eşyaya, elektronikten kitaplara kadar eşyalarınızı hasarsız taşımanın püf noktaları.",
+      "Kırılacaklardan beyaz eşyaya, elektronikten kitaplara kadar eşyalarınızı zarar görmeden taşımanın püf noktaları.",
     date: "2026-05-28",
     readMinutes: 7,
     cover: uns("photo-1616432043562-3671ea2e5242", 1200),

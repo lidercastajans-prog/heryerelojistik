@@ -31,7 +31,7 @@ export async function generateMetadata({
   const title = `${district.name} Evden Eve Nakliyat (İstanbul)`;
   const description = `${district.name} ve çevresinde (${district.neighborhoods
     .slice(0, 3)
-    .join(", ")}) sigortalı, asansörlü evden eve nakliyat. ${district.intro.slice(0, 90)}`.slice(
+    .join(", ")}) asansörlü evden eve nakliyat. ${district.intro.slice(0, 90)}`.slice(
     0,
     160
   );
@@ -81,7 +81,7 @@ export default async function DistrictPage({
       />
       <PageHero
         title={`${district.name} Evden Eve Nakliyat`}
-        description={`İstanbul ${district.name} (${district.side}) bölgesinde sigortalı, asansörlü evden eve nakliyat ve yük taşımacılığı.`}
+        description={`İstanbul ${district.name} (${district.side}) bölgesinde asansörlü evden eve nakliyat, paketleme ve yük taşımacılığı.`}
         breadcrumb={breadcrumb}
       />
 
@@ -150,7 +150,7 @@ export default async function DistrictPage({
           <div className="container-x">
             <h2 className="font-heading text-xl font-bold text-ink">Yakındaki bölgeler</h2>
             <p className="mt-2 text-sm text-muted">
-              {district.name} çevresinde de aynı gün nakliyat yapıyoruz.
+              {district.name} çevresindeki ilçelerde de nakliyat yapıyoruz.
             </p>
             <ul className="mt-5 flex flex-wrap gap-3">
               {nearby.map((d) => (

@@ -10,7 +10,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
         center
         eyebrow="Hizmetlerimiz"
         title="Her taşıma ihtiyacınıza tek çatı altında çözüm"
-        description="Evden eve nakliyattan şehirler arası yük taşımacılığına, paketlemeden depolamaya kadar her adımda yanınızdayız."
+        description="Evden eve nakliyattan şehirler arası yük taşımacılığına, paketlemeden kuruluma kadar taşınmanın her adımını üstleniyoruz."
       />
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, i) => (

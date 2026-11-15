@@ -68,9 +68,9 @@ export default async function TeklifAlPage({
 
           <ul className="space-y-4 rounded-3xl border border-line bg-surface p-7">
             {[
-              { icon: BadgeCheck, text: "Ücretsiz keşif ve net, yazılı fiyat" },
-              { icon: ShieldCheck, text: "Sigortalı ve güvenli taşımacılık" },
-              { icon: Clock, text: "Hızlı dönüş ve zamanında teslimat" },
+              { icon: BadgeCheck, text: "Fotoğraf veya görüntülü görüşmeyle yazılı fiyat" },
+              { icon: ShieldCheck, text: "Battaniye, streç ve kayışla korunan eşya" },
+              { icon: Clock, text: "Hızlı dönüş, önceden konuşulan teslim saati" },
             ].map((item, i) => {
               const Ico = item.icon;
               return (

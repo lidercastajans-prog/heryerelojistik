@@ -9,17 +9,17 @@ export const faqs: Faq[] = [
   {
     question: "Taşınma için ne kadar önceden randevu almalıyım?",
     answer:
-      "İdeal olarak taşınma tarihinizden 3-5 gün önce iletişime geçmeniz yeterlidir. Yoğun dönemlerde (ay başı/sonu) daha erken planlama öneririz. Acil durumlarda aynı gün hizmet için bizi arayabilirsiniz.",
+      "İdeal olarak taşınma tarihinizden 3-5 gün önce iletişime geçmeniz yeterlidir. Yoğun dönemlerde (ay başı/sonu) daha erken planlama öneririz. Acil bir taşımanız varsa arayın; takvim uygunsa aynı gün için de planlama yapmaya çalışırız.",
   },
   {
-    question: "Fiyat nasıl belirleniyor, sürpriz ek ücret var mı?",
+    question: "Fiyat nasıl belirleniyor, sonradan ek ücret çıkar mı?",
     answer:
-      "Fiyat; eşya miktarı, mesafe, kat ve asansör durumu ile ek hizmetlere (paketleme, depolama vb.) göre belirlenir. Keşif sonrası size yazılı ve net bir fiyat sunarız; üzerinde anlaştığımız tutar dışında sürpriz ücret çıkmaz.",
+      "Fiyat; eşya miktarı, mesafe, kat ve asansör durumu ile paketleme, montaj gibi ek işlere göre belirlenir. Eşyalarınızı fotoğraf veya görüntülü görüşmeyle görüp size yazılı bir fiyat veririz. Taşınma günü kat, eşya ya da adres bilgisi değişmezse konuştuğumuz fiyat geçerli olur; bu yüzden bilgileri baştan eksiksiz paylaşmanızı isteriz.",
   },
   {
-    question: "Eşyalarım sigortalı mı taşınıyor?",
+    question: "Taşıma sırasında eşyalarım nasıl korunuyor?",
     answer:
-      "Evet. Tüm taşımalarımız sigorta güvencesi altındadır. Taşıma sırasında oluşabilecek hasarlar sigorta poliçesinin kapsamı dahilinde karşılanır.",
+      "Mobilyalar battaniye ve streç filmle sarılıyor, kırılacaklar balonlu naylon ve koliyle ayrı paketleniyor. Araçta eşyalar kayışla sabitleniyor, ağır parçalar alta, hassas parçalar üste yerleştiriliyor. Sökülebilen mobilyaları söküp yeni adreste tekrar kuruyoruz ki yolda zorlanmasın.",
   },
   {
     question: "Paketleme malzemelerini siz mi sağlıyorsunuz?",
@@ -29,7 +29,7 @@ export const faqs: Faq[] = [
   {
     question: "Asansörlü taşıma her binada mümkün mü?",
     answer:
-      "Mobil asansörümüz, önünde uygun park ve manevra alanı bulunan çoğu binada kullanılabilir. Keşif sırasında binanızın durumunu değerlendirip en güvenli yöntemi belirleriz.",
+      "Mobil asansör, önünde uygun park ve manevra alanı bulunan çoğu binada kullanılabilir. Fiyat konuşurken binanızın durumunu değerlendirip en güvenli yöntemi belirleriz.",
   },
   {
     question: "Şehirler arası taşımada yükümün durumunu nasıl öğrenirim?",
@@ -39,6 +39,6 @@ export const faqs: Faq[] = [
   {
     question: "Eşyalarımı bir süre depolayabilir misiniz?",
     answer:
-      "Evet. Eşyalarınızı paketleyip etiketleyerek kapalı depoda kısa veya uzun süreli olarak saklayabiliriz. Taşıma ile depolamayı tek pakette de planlayabiliriz.",
+      "Yeni ev hazır değilse ya da eşyanın bir kısmı sığmayacaksa bunu teklif alırken bize söyleyin. Süreyi ve eşya miktarını konuşup sizin için uygun bir çözüm bulmaya çalışırız.",
   },
 ];

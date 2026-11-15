@@ -3,7 +3,15 @@ import { MapPin, ArrowRight } from "lucide-react";
 import Reveal from "./Reveal";
 import { citySlugByName } from "@/lib/cities";
 
-export default function CoverageAreas({ cities, note }: { cities: string[]; note: string }) {
+export default function CoverageAreas({
+  cities,
+  intercity = [],
+  note,
+}: {
+  cities: string[];
+  intercity?: string[];
+  note: string;
+}) {
   return (
     <section className="bg-surface py-20 lg:py-28">
       <div className="container-x grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
@@ -12,7 +20,7 @@ export default function CoverageAreas({ cities, note }: { cities: string[]; note
             Hizmet Bölgeleri
           </span>
           <h2 className="mt-4 text-3xl font-extrabold text-ink sm:text-4xl">
-            Türkiye'nin <span className="text-brand-600">81 iline</span> taşıyoruz
+            <span className="text-brand-600">İstanbul ve Marmara</span>&apos;da düzenli taşıma
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{note}</p>
           <Link
@@ -47,6 +55,16 @@ export default function CoverageAreas({ cities, note }: { cities: string[]; note
               );
             })}
           </ul>
+          {intercity.length > 0 && (
+            <div className="mt-8">
+              <p className="text-sm font-bold uppercase tracking-wider text-muted">
+                Şehirler arası taşıma (talep üzerine)
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                {intercity.join(", ")} ve diğer iller için gideceğiniz yeri yazın, tarih ve fiyatı konuşalım.
+              </p>
+            </div>
+          )}
         </Reveal>
       </div>
     </section>

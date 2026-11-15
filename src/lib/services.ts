@@ -38,30 +38,30 @@ export const services: Service[] = [
     slug: "evden-eve-nakliyat",
     title: "Evden Eve Nakliyat",
     excerpt:
-      "Eşyalarınızı özenle paketliyor, asansörle indirip sigortalı olarak yeni evinize taşıyoruz.",
+      "Eşyalarınızı özenle paketliyor, asansörle indirip araçta sabitleyerek yeni evinize taşıyoruz.",
     icon: "Home",
     featured: true,
     image: images.serviceEvdenEve,
     href: "/hizmetler/evden-eve-nakliyat",
     detail: {
       intro:
-        "Tek bir eşyanız bile zarar görmeden taşınsın diye paketlemeden montaja kadar her adımı biz üstleniyoruz. " +
-        "Profesyonel ekibimiz, asansörlü araçlarımız ve sigortalı taşımacılığımızla taşınma stresini sizden alıyoruz.",
+        "Paketlemeden montaja kadar her adımı biz üstleniyoruz. " +
+        "Eşyalar battaniye ve streçle sarılıyor, araçta kayışla sabitleniyor; yüksek katlarda mobil asansör kullanıyoruz.",
       highlights: [
         { icon: "Package", title: "Profesyonel Paketleme", text: "Balonlu naylon, çok katlı koli ve özel ambalajla her eşya korunur." },
         { icon: "ArrowUpDown", title: "Asansörlü Taşıma", text: "Yüksek katlara güvenli ve hızlı taşıma için mobil asansör." },
-        { icon: "ShieldCheck", title: "Sigortalı Taşımacılık", text: "Tüm eşyalarınız taşıma süresince sigorta güvencesi altında." },
+        { icon: "ShieldCheck", title: "Özenli Taşıma", text: "Mobilya battaniyesi, streç film ve sabitleme kayışıyla eşya yolda yerinden oynamaz." },
         { icon: "Wrench", title: "Montaj & Demontaj", text: "Mobilyalarınız sökülür ve yeni evinizde yeniden kurulur." },
       ],
       sections: [
         {
-          title: "Ücretsiz keşif ve net fiyat",
-          body: "Taşınma öncesi ekibimiz adresinize gelir veya görüntülü keşif yapar; eşya miktarını, kat ve asansör durumunu değerlendirip net, sürpriz çıkarmayan bir fiyat sunar.",
-          bullets: ["Yerinde veya görüntülü keşif", "Yazılı, net fiyat teklifi", "Esnek randevu ve gün planlaması"],
+          title: "Fotoğrafla veya görüntülü görüşmeyle fiyat",
+          body: "Eşyalarınızın fotoğrafını gönderin ya da kısa bir görüntülü görüşme yapalım. Eşya miktarını, kat ve asansör durumunu görüp fiyatı baştan konuşuruz. Teklif istemek ücretsizdir.",
+          bullets: ["Fotoğraf veya görüntülü görüşmeyle değerlendirme", "Yazılı fiyat teklifi", "Esnek randevu ve gün planlaması"],
         },
         {
           title: "Paketleme ve taşıma",
-          body: "Kırılacak eşyalar özel ambalajla, beyaz eşya ve mobilyalar koruyucu örtülerle hazırlanır. Eşyalar numaralandırılır, asansörle güvenle indirilir ve donanımlı araçlarımızla taşınır.",
+          body: "Kırılacak eşyalar özel ambalajla, beyaz eşya ve mobilyalar koruyucu örtülerle hazırlanır. Eşyalar numaralandırılır, asansörle indirilir, araçta kayışla sabitlenerek taşınır.",
           bullets: ["Kırılacaklara özel ambalaj", "Beyaz eşya ve mobilyaya koruma", "Kapalı kasa araçla taşıma"],
         },
         {
@@ -76,20 +76,20 @@ export const services: Service[] = [
     slug: "sehirler-arasi-yuk-tasimaciligi",
     title: "Şehirler Arası Yük Taşımacılığı",
     excerpt:
-      "Parsiyel ve komple yük taşımacılığı; 81 ile sigortalı taşıma ve planlı teslimat.",
+      "Parsiyel ve komple yük taşımacılığı; İstanbul'dan diğer illere planlı sevkiyat ve teslimat.",
     icon: "Truck",
     featured: true,
     image: images.serviceSehirlerArasi,
     href: "/hizmetler/sehirler-arasi-yuk-tasimaciligi",
     detail: {
       intro:
-        "İster tek palet ister komple tır olsun, yükünüzü Türkiye'nin dört bir yanına güvenle ulaştırıyoruz. " +
-        "Yükünüze uygun araçla, hem bireysel hem kurumsal taşımalarınızda yanınızdayız.",
+        "İster tek palet ister komple araç olsun, İstanbul ve Marmara'dan diğer illere yük taşıyoruz. " +
+        "Gideceği şehri ve yükün ölçüsünü yazın, uygun aracı ve tarihi birlikte planlayalım.",
       highlights: [
         { icon: "Boxes", title: "Parsiyel & Komple", text: "Tek koliden komple tıra kadar her ölçekte yük taşıma." },
-        { icon: "Route", title: "81 İle Taşıma", text: "Türkiye'nin her iline, yükünüze uygun araçla sevkiyat." },
+        { icon: "Route", title: "Şehirler Arası Sevkiyat", text: "Marmara dışındaki illere talep üzerine, yükünüze uygun araçla sevkiyat." },
         { icon: "MapPin", title: "Yolda Bilgilendirme", text: "Yola çıkış ve tahmini varış saatini paylaşıyor, yol boyunca telefonla bilgi veriyoruz." },
-        { icon: "ShieldCheck", title: "Sigortalı Yük", text: "Taşınan tüm yükler sigorta kapsamında güvende." },
+        { icon: "ShieldCheck", title: "Sabitlenmiş Yük", text: "Yük paketlenir, araçta kayış ve ara takozla sabitlenir." },
       ],
       sections: [
         {
@@ -137,7 +137,7 @@ export const services: Service[] = [
   {
     slug: "esya-depolama",
     title: "Eşya Depolama",
-    excerpt: "Paketlenip etiketlenen eşyalarınız için kapalı depoda kısa veya uzun süreli saklama.",
+    excerpt: "Yeni ev hazır değilse ya da eşyanın bir kısmı sığmayacaksa depolama ihtiyacınızı sorun, birlikte çözüm bulalım.",
     icon: "Warehouse",
     image: images.serviceDepolama,
     href: "/hizmetler/evden-eve-nakliyat",
