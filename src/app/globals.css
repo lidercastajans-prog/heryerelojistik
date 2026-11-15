@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Hero sahnesi "masaüstü yerleşimi": geniş VE yatay ekran (dikey tabletler mobil yerleşimi alır) */
+@custom-variant hsdesk (@media (min-width: 1024px) and (min-aspect-ratio: 5/4));
+
 /* ============================================================
    Rota Lojistik — Tema (Modern & Enerjik)
    Canlı mavi + turkuaz, yuvarlak köşeler, yumuşak gölge
@@ -234,6 +237,139 @@
 }
 .route-dash path { animation: route-flow 1.4s linear infinite; }
 
+/* ============================================================
+   Hero sahnesi (HeroScene.tsx) — kaydırmaya bağlı yükleme sahnesi
+   Bölüm yüksekliği = kaydırma mesafesi; içteki sahne sticky.
+   ============================================================ */
+.hs {
+  position: relative;
+  height: 190svh;
+  background: #0a1430;
+  overflow-x: clip; /* sticky'yi bozmadan yatay taşmayı keser */
+}
+.hs-stage {
+  position: sticky;
+  top: 68px; /* mobil header ana bar */
+  height: calc(100svh - 136px); /* header + alttaki mobil aksiyon barı */
+  min-height: 480px;
+  overflow: hidden;
+  background: #0a1430;
+}
+@media (min-width: 1024px) {
+  .hs-stage {
+    top: 76px;
+    height: calc(100svh - 76px);
+    min-height: 540px;
+  }
+}
+.hs-svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: min(172vw, calc((100svh - 136px) * 1.04));
+  height: auto;
+  aspect-ratio: 1640 / 900;
+}
+.hs-shade { display: none; }
+.hs-copy {
+  position: relative;
+  z-index: 2;
+  padding-top: 1.25rem;
+}
+.hs-caption {
+  max-width: 26rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  padding: 0.75rem 0.9rem 0.8rem;
+  backdrop-filter: blur(6px);
+}
+.hs-bar {
+  display: block;
+  height: 3px;
+  margin-bottom: 0.6rem;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+.hs-bar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent-400), var(--color-accent-300));
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.hs-steps { display: grid; }
+.hs-steps > li {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.hs-steps > li[data-on] { opacity: 1; transform: none; }
+.hs-hint {
+  margin-top: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 999px;
+  background: rgba(10, 20, 48, 0.72);
+  padding: 0.35rem 0.8rem 0.35rem 0.95rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  transition: opacity 0.3s ease;
+}
+.hs-hint svg { animation: hs-nudge 1.4s ease-in-out infinite; }
+.hs-hint[data-off] { opacity: 0; pointer-events: none; }
+@keyframes hs-nudge {
+  0%, 100% { transform: translateY(-1px); }
+  50% { transform: translateY(3px); }
+}
+/* Mobil/dikey: sadeleşen sahne */
+@media not all and (min-width: 1024px) and (min-aspect-ratio: 5/4) {
+  .hs-dk { display: none; }
+}
+/* Masaüstü: sahne tam ekran, metin solda */
+@media (min-width: 1024px) and (min-aspect-ratio: 5/4) {
+  .hs { height: 300svh; }
+  .hs-svg {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+  .hs-shade {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      90deg,
+      rgba(10, 20, 48, 0.9) 0,
+      rgba(10, 20, 48, 0.7) calc(50% - 170px),
+      rgba(10, 20, 48, 0) calc(50% + 60px)
+    );
+  }
+  .hs-copy {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+  .hs-copy-in { max-width: 32rem; }
+  .hs-hint {
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+    margin: 0;
+    transform: translateX(-50%);
+  }
+}
+
 /* Hareketi azalt tercihine saygı */
 @media (prefers-reduced-motion: reduce) {
   .route-dash path,
@@ -249,6 +385,11 @@
     transform: none !important;
     transition: none !important;
   }
+  /* Hero sahnesi: sticky/kaydırma mesafesi yok, son kare statik (JS p=1 basar) */
+  .hs { height: auto !important; }
+  .hs-stage { position: relative; top: 0; }
+  .hs-hint { display: none; }
+  .hs-steps > li { transition: none; }
   .floaty, .floaty-slow, .floaty-fast,
   .animate-marquee,
   [class*="animate-"] {
