@@ -48,8 +48,8 @@ export const site = {
   indexable: true,
 
   social: {
-    // Facebook Sayfası 15.11.2026'da açıldı (ajans). Instagram açılınca eklenecek.
-    instagram: "",
+    // Facebook Sayfası + Instagram işletme hesabı 15.11.2026'da açıldı (ajans yönetiyor).
+    instagram: "https://www.instagram.com/heryerelojistik/",
     facebook: "https://www.facebook.com/profile.php?id=61596542943551",
     linkedin: "",
     youtube: "",
