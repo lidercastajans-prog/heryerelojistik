@@ -1,12 +1,14 @@
 /**
- * Görsel kaynakları (GEÇİCİ stok fotoğraflar — Unsplash).
+ * Görsel kaynakları.
  *
- * ⚠️ Bunlar placeholder'dır. Kendi fotoğraflarınızı kullanmak için:
- *   1) Görselleri `public/images/` altına koyun
- *   2) Aşağıdaki değerleri "/images/dosya.jpg" ile değiştirin
+ * - Hero, hizmet kartları ve CTA arka planı: yapay zekâ ile üretilmiş TEMSİLİ görseller
+ *   (OpenAI, 15.11.2026; istem arşivi: ajans/marka/heryerelojistik/site-gorselleri/*.istem.txt).
+ *   Logo/yazı/plaka yok, yüzler seçilmiyor. Firmanın gerçek iş fotoğrafları gelince
+ *   aynı dosya adlarıyla `public/images/` altına konup değiştirilmeli.
+ * - `about`: geçici Unsplash stok fotoğraf.
+ * - Galeri (`gallery.ts`) bilerek stok kalır; oraya AI görsel konmaz (gerçek iş gibi algılanır).
  *
- * Not: Photo bileşeni, bir görsel yüklenmezse otomatik olarak şık bir
- * gradient + ikon fallback gösterir; hiçbir zaman "kırık görsel" çıkmaz.
+ * Not: Photo bileşeni, bir görsel yüklenmezse gradient + ikon fallback gösterir.
  */
 
 const CDN = "https://images.unsplash.com/";
@@ -17,12 +19,12 @@ export function uns(id: string, w = 1280): string {
 }
 
 export const images = {
-  heroBg: uns("photo-1485575301924-6891ef935dcd", 2000),
-  serviceEvdenEve: uns("photo-1616432043562-3671ea2e5242", 1200),
-  serviceSehirlerArasi: uns("photo-1473445730015-841f29a9490b", 1200),
-  serviceAsansorlu: uns("photo-1695222833131-54ee679ae8e5", 1200),
-  serviceOfis: uns("photo-1497215842964-222b430dc094", 1200),
-  servicePaketleme: uns("photo-1600725935160-f67ee4f6084a", 1200),
+  heroBg: "/images/hero-nakliyat.webp",
+  serviceEvdenEve: "/images/hizmet-evden-eve.webp",
+  serviceSehirlerArasi: "/images/hizmet-sehirler-arasi.webp",
+  serviceAsansorlu: "/images/hizmet-asansorlu.webp",
+  serviceOfis: "/images/hizmet-ofis.webp",
+  servicePaketleme: "/images/hizmet-paketleme.webp",
   about: uns("photo-1592838064575-70ed626d3a0e", 1200),
-  ctaBg: uns("photo-1720811559395-3ed8d1b16649", 1600),
+  ctaBg: "/images/cta-yukleme.webp",
 };

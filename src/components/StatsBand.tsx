@@ -1,19 +1,20 @@
 import type { Stat } from "@/lib/stats";
 import CountUp from "./CountUp";
 
+/** Hızlı teklif çubuğunun altında sade, ayraçlı rakam şeridi. */
 export default function StatsBand({ stats }: { stats: Stat[] }) {
   return (
-    <section className="container-x -mt-10 relative z-10">
-      <div className="grid gap-px overflow-hidden rounded-3xl bg-gradient-to-r from-brand-600 to-accent-500 shadow-xl shadow-brand-900/15 sm:grid-cols-2 lg:grid-cols-4">
+    <section aria-label="Kısaca biz" className="container-x pt-14 lg:pt-16">
+      <dl className="grid grid-cols-2 gap-y-8 lg:grid-cols-4 lg:divide-x lg:divide-line">
         {stats.map((s) => (
-          <div key={s.label} className="bg-transparent px-6 py-8 text-center text-white">
-            <div className="font-heading text-4xl font-extrabold tracking-tight sm:text-5xl">
+          <div key={s.label} className="flex flex-col px-3 text-center lg:px-6">
+            <dt className="order-2 mt-1.5 text-sm font-medium leading-snug text-muted">{s.label}</dt>
+            <dd className="order-1 font-heading text-4xl font-extrabold tracking-tight text-brand-600 sm:text-5xl">
               <CountUp value={s.value} prefix={s.prefix} suffix={s.suffix} />
-            </div>
-            <div className="mt-2 text-sm font-medium text-white/85">{s.label}</div>
+            </dd>
           </div>
         ))}
-      </div>
+      </dl>
     </section>
   );
 }

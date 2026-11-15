@@ -27,12 +27,14 @@ export default function CoverageAreas({
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{note}</p>
           <Link
+
             href="/iletisim"
-            className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-3 text-base font-bold text-white shadow-sm shadow-brand-600/30 transition-colors hover:bg-accent-500"
+            className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-3 text-base font-bold text-white shadow-sm shadow-brand-600/30 transition-colors hover:bg-brand-700"
           >
             Bölgenizi sorun
             <ArrowRight className="h-5 w-5" aria-hidden />
           </Link>
+          <RouteCard />
         </div>
 
         <Reveal>
@@ -89,5 +91,50 @@ export default function CoverageAreas({
         </Reveal>
       </div>
     </section>
+  );
+}
+
+/** Şematik rota kartı: İstanbul merkezden üç düzenli sefer bölgesine. Coğrafi harita değil, sembolik çizim. */
+function RouteCard() {
+  const hub = { x: 170, y: 64 };
+  const nodes = [
+    { x: 58, y: 104, c: "Q 100 62", label: "Marmara" },
+    { x: 80, y: 178, c: "Q 160 150", label: "Ege" },
+    { x: 278, y: 178, c: "Q 276 96", label: "Akdeniz" },
+  ];
+  return (
+    <figure className="mt-8 max-w-md overflow-hidden rounded-3xl bg-brand-950 p-5 text-white shadow-xl shadow-brand-950/20 sm:p-6">
+      <svg viewBox="0 0 340 218" role="img" aria-labelledby="rota-baslik" className="h-auto w-full">
+        <title id="rota-baslik">İstanbul merkezden Marmara, Ege ve Akdeniz&apos;e düzenli sefer (şematik)</title>
+        <defs>
+          <radialGradient id="rota-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#22ccee" stopOpacity="0.55" />
+            <stop offset="100%" stopColor="#22ccee" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        <g fill="none" stroke="#608bfa" strokeWidth="2" strokeDasharray="5 6" strokeLinecap="round" className="route-dash">
+          {nodes.map((n) => (
+            <path key={n.label} d={`M${hub.x} ${hub.y} ${n.c} ${n.x} ${n.y}`} />
+          ))}
+        </g>
+        <circle cx={hub.x} cy={hub.y} r="30" fill="url(#rota-glow)" />
+        <circle cx={hub.x} cy={hub.y} r="9" fill="#22ccee" stroke="#fff" strokeWidth="3" />
+        <text x={hub.x} y="26" textAnchor="middle" fill="#fff" fontSize="15" fontWeight="800" fontFamily="var(--font-poppins), sans-serif">
+          İstanbul <tspan fill="#93b4fd" fontWeight="600" fontSize="12">· merkez</tspan>
+        </text>
+        {nodes.map((n) => (
+          <g key={n.label}>
+            <circle cx={n.x} cy={n.y} r="6.5" fill="#172554" stroke="#22ccee" strokeWidth="3" />
+            <text x={n.x} y={n.y + 25} textAnchor="middle" fill="#fff" fontSize="13" fontWeight="700" fontFamily="var(--font-poppins), sans-serif">
+              {n.label}
+            </text>
+          </g>
+        ))}
+      </svg>
+      <figcaption className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-white/10 pt-4 text-sm text-white/75">
+        <span className="font-semibold text-white">Düzenli sefer bölgeleri</span>
+        <span>Diğer iller talep üzerine</span>
+      </figcaption>
+    </figure>
   );
 }

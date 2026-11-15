@@ -1,45 +1,52 @@
 import Link from "next/link";
 import { Phone, ArrowRight } from "lucide-react";
-import { site, telLink } from "@/lib/site";
+import { site, telLink, whatsappLink } from "@/lib/site";
 import { images } from "@/lib/images";
 import Photo from "./Photo";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function CtaSection() {
+  const mesaj = `Merhaba ${site.name}, taşınma için fiyat almak istiyorum.`;
   return (
     <section className="container-x py-16">
-      <div className="grain relative overflow-hidden rounded-[2rem] px-8 py-14 text-center shadow-2xl shadow-brand-900/20 sm:px-12 sm:py-16">
-        {/* arka plan foto + marka overlay */}
+      <div className="relative isolate overflow-hidden rounded-[2rem] px-6 py-16 text-center shadow-2xl shadow-brand-950/25 sm:px-12 sm:py-20">
+        {/* Arka plan foto (akşam yüklemesi) + lacivert örtü — fotoğraf görünür kalır */}
         <div className="absolute inset-0 -z-20">
-          <Photo src={images.ctaBg} alt="" sizes="100vw" fallback={{ from: "from-brand-700", to: "to-accent-600" }} />
+          <Photo src={images.ctaBg} alt="" sizes="(max-width: 1280px) 100vw, 1280px" fallback={{ from: "from-brand-800", to: "to-brand-950" }} />
         </div>
-        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-br from-brand-800/95 via-brand-700/90 to-accent-700/85" />
-        {/* dekor */}
-        <div aria-hidden className="pointer-events-none absolute -left-16 -top-16 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
-        <div aria-hidden className="pointer-events-none absolute -bottom-20 -right-10 h-72 w-72 rounded-full bg-accent-300/20 blur-3xl" />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(10,20,48,0.5)_0%,rgba(10,20,48,0.7)_55%,rgba(10,20,48,0.9)_100%)]" />
 
         <div className="relative mx-auto max-w-2xl">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-            Taşınmaya hazır mısınız?
-          </h2>
-          <p className="mt-4 text-lg text-white/90">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-300">7/24 ulaşılabilir</p>
+          <h2 className="mt-3 text-3xl font-extrabold text-white sm:text-5xl">Taşınmaya hazır mısınız?</h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-white/85">
             Eşyalarınızın fotoğrafını gönderin, yazılı fiyatı hızlıca iletelim. Teklif almak ücretsiz.
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/teklif-al"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-base font-bold text-brand-700 shadow-lg transition-transform hover:scale-[1.03] sm:w-auto"
+          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a
+              href={whatsappLink(mesaj)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-base font-bold text-[#06241a] shadow-lg transition-transform hover:-translate-y-0.5 sm:w-auto"
             >
-              Ücretsiz Teklif Al
-              <ArrowRight className="h-5 w-5" aria-hidden />
-            </Link>
+              <WhatsAppIcon className="h-5 w-5" />
+              WhatsApp&apos;tan Yazın
+            </a>
             <a
               href={telLink()}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-white/70 px-7 py-3.5 text-base font-bold text-white transition-colors hover:bg-white/10 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-base font-bold text-brand-800 shadow-lg transition-transform hover:-translate-y-0.5 sm:w-auto"
             >
               <Phone className="h-5 w-5" aria-hidden />
               {site.phoneDisplay}
             </a>
           </div>
+          <Link
+            href="/teklif-al"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-white/90 underline-offset-4 hover:text-white hover:underline"
+          >
+            ya da online teklif formunu doldurun
+            <ArrowRight className="h-4 w-4" aria-hidden />
+          </Link>
         </div>
       </div>
     </section>
