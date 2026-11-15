@@ -14,7 +14,7 @@ export const faqs: Faq[] = [
   {
     question: "Fiyat nasıl belirleniyor, sonradan ek ücret çıkar mı?",
     answer:
-      "Fiyat; eşya miktarı, mesafe, kat ve asansör durumu ile paketleme, montaj gibi ek işlere göre belirlenir. Eşyalarınızı fotoğraf veya görüntülü görüşmeyle görüp size yazılı bir fiyat veririz. Taşınma günü kat, eşya ya da adres bilgisi değişmezse konuştuğumuz fiyat geçerli olur; bu yüzden bilgileri baştan eksiksiz paylaşmanızı isteriz.",
+      "Fiyat; eşya miktarı, mesafe, kat ve asansör durumu ile paketleme, montaj gibi ek işlere göre belirlenir. Keşif için adrese gelmiyoruz, buna gerek de kalmıyor: eşyanın fotoğraf ya da videosunu, eşya listesini gönderirseniz veya kısa bir görüntülü görüşme yaparsak size yazılı bir fiyat veririz. Taşınma günü kat, eşya ya da adres bilgisi değişmezse konuştuğumuz fiyat geçerli olur; bu yüzden bilgileri baştan eksiksiz paylaşmanızı isteriz.",
   },
   {
     question: "Taşıma sırasında eşyalarım nasıl korunuyor?",
@@ -37,8 +37,8 @@ export const faqs: Faq[] = [
       "Yola çıkış ve tahmini varış saatini sizinle paylaşıyoruz. Yol boyunca 7/24 telefon ve WhatsApp hattımızdan ekibe ulaşıp yükünüzün nerede olduğunu öğrenebilirsiniz.",
   },
   {
-    question: "Eşyalarımı bir süre depolayabilir misiniz?",
+    question: "Taşıma sigortası yaptırabilir miyim?",
     answer:
-      "Yeni ev hazır değilse ya da eşyanın bir kısmı sığmayacaksa bunu teklif alırken bize söyleyin. Süreyi ve eşya miktarını konuşup sizin için uygun bir çözüm bulmaya çalışırız.",
+      "Evet. Talep ederseniz taşıma sigortası yapılıyor. Teklif alırken bunu belirtin; sigorta bedeli eşyanın değerine göre ayrıca konuşulur ve teklife ayrı satır olarak yazılır.",
   },
 ];

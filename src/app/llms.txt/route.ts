@@ -1,7 +1,7 @@
 import { site } from "@/lib/site";
 import { services } from "@/lib/services";
 import { faqs } from "@/lib/faqs";
-import { featuredCities } from "@/lib/coverage";
+import { featuredCities, regularRouteCities } from "@/lib/coverage";
 import { cities } from "@/lib/cities";
 import { istanbulDistricts } from "@/lib/istanbul-districts";
 import { sortedPosts } from "@/lib/posts";
@@ -17,7 +17,7 @@ export function GET() {
   lines.push("");
   lines.push(`> ${site.description}`);
   lines.push("");
-  lines.push(`${site.legalName}, ${site.foundedYear} yılından bu yana faaliyet gösteren bir nakliyat ve lojistik firmasıdır. Merkezi İstanbul Kağıthane'dedir. İstanbul'un iki yakasında ve Kocaeli, Tekirdağ, Bursa, Sakarya, Yalova'da düzenli evden eve nakliyat yapar; diğer illere şehirler arası taşımayı talep üzerine planlar. Paketleme, mobil asansörle taşıma, söküm ve montaj yapılır.`);
+  lines.push(`${site.legalName}, ${site.foundedYear} yılından bu yana faaliyet gösteren bir nakliyat ve lojistik firmasıdır. Merkezi İstanbul Kağıthane'dedir. İstanbul'un iki yakasında ve Kocaeli, Tekirdağ, Bursa, Sakarya, Yalova'da düzenli evden eve nakliyat yapar; Ege ve Akdeniz'e düzenli sefer düzenler, diğer illere talep üzerine gider. İşe göre kamyonet, kamyon veya tır ayarlanır; parsiyel ve komple tır yükü taşınır. Paketleme, mobil asansörle taşıma, söküm ve montaj yapılır. Yerinde keşif yapılmaz; fiyat fotoğraf/video, eşya listesi veya görüntülü görüşmeyle verilir. Depolama hizmeti yoktur. Taşıma sigortası talep üzerine yaptırılır.`);
   lines.push("");
 
   lines.push("## Hizmetler");
@@ -28,7 +28,7 @@ export function GET() {
 
   lines.push("## Hizmet Bölgeleri");
   lines.push(
-    `Düzenli hizmet: ${featuredCities.join(", ")}. Diğer iller: şehirler arası taşıma, talep üzerine.`
+    `Düzenli hizmet (Marmara): ${featuredCities.join(", ")}. Düzenli sefer (Ege ve Akdeniz): ${regularRouteCities.join(", ")}. Diğer iller: talep üzerine.`
   );
   lines.push("");
 
@@ -44,7 +44,8 @@ export function GET() {
   lines.push("## Öne Çıkan Bilgiler");
   lines.push("- Paketleme: battaniye, streç film, koli; araçta kayışla sabitleme");
   lines.push("- Yüksek katlarda mobil asansörle taşıma");
-  lines.push("- Fotoğraf veya görüntülü görüşmeyle yazılı fiyat; teklif istemek ücretsiz");
+  lines.push("- Fotoğraf/video, eşya listesi veya görüntülü görüşmeyle yazılı fiyat; teklif istemek ücretsiz");
+  lines.push("- İsteğe bağlı taşıma sigortası (talep üzerine, bedeli ayrıca konuşulur)");
   lines.push("- Parsiyel (paylaşımlı) ve komple yük taşımacılığı");
   lines.push("- Şehirler arası sevkiyatlarda yola çıkış ve tahmini varış bilgilendirmesi");
   lines.push("- 7/24 telefon ve WhatsApp hattı");

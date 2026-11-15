@@ -2,7 +2,7 @@
 
 import { site } from "./site";
 import { faqs, type Faq } from "./faqs";
-import { featuredCities } from "./coverage";
+import { servedCities } from "./coverage";
 import { istanbulDistricts } from "./istanbul-districts";
 
 const OG = `${site.url}/opengraph-image`;
@@ -39,9 +39,9 @@ export function organizationSchema() {
       addressCountry: "TR",
     },
     hasMap: MAPS_URL,
-    // Düzenli hizmet: İstanbul + Marmara'daki 5 il. Diğer illere şehirler arası taşıma talep üzerine.
+    // Düzenli hizmet/sefer: İstanbul + Marmara'daki 5 il + Ege ve Akdeniz illeri. Diğer illere talep üzerine.
     areaServed: [
-      ...featuredCities.map((c) => ({ "@type": "AdministrativeArea", name: c })),
+      ...servedCities.map((c) => ({ "@type": "AdministrativeArea", name: c })),
       // Hizmet verdiğimiz İstanbul ilçeleri — yerel aramada varlık (entity) eşleşmesi için.
       ...istanbulDistricts.map((d) => ({
         "@type": "AdministrativeArea",
@@ -123,7 +123,7 @@ export function serviceSchema(opts: {
     areaServed: opts.area
       ? { "@type": "AdministrativeArea", name: opts.area }
       : [
-          ...featuredCities.map((c) => ({ "@type": "AdministrativeArea", name: c })),
+          ...servedCities.map((c) => ({ "@type": "AdministrativeArea", name: c })),
           ...(opts.nationwide ? [{ "@type": "Country", name: "Türkiye" }] : []),
         ],
   };

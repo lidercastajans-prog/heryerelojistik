@@ -19,8 +19,8 @@ export const processSteps: ProcessStep[] = [
   {
     step: 2,
     icon: "Clock",
-    title: "Fiyat & Planlama",
-    text: "Eşyalarınızı fotoğraf veya görüntülü görüşmeyle görüp yazılı fiyatı ve taşıma gününü belirleyelim.",
+    title: "Fotoğraf Gönderin, Fiyat Alın",
+    text: "Eşyanın fotoğraf ya da videosunu, eşya listesini gönderin veya görüntülü görüşelim; yazılı fiyatı ve taşıma gününü belirleyelim.",
   },
   {
     step: 3,

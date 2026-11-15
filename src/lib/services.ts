@@ -62,7 +62,7 @@ export const services: Service[] = [
         {
           title: "Paketleme ve taşıma",
           body: "Kırılacak eşyalar özel ambalajla, beyaz eşya ve mobilyalar koruyucu örtülerle hazırlanır. Eşyalar numaralandırılır, asansörle indirilir, araçta kayışla sabitlenerek taşınır.",
-          bullets: ["Kırılacaklara özel ambalaj", "Beyaz eşya ve mobilyaya koruma", "Kapalı kasa araçla taşıma"],
+          bullets: ["Kırılacaklara özel ambalaj", "Beyaz eşya ve mobilyaya koruma", "Kapalı kasa araçla taşıma", "İsteğe bağlı taşıma sigortası"],
         },
         {
           title: "Yeni evde kurulum",
@@ -83,11 +83,11 @@ export const services: Service[] = [
     href: "/hizmetler/sehirler-arasi-yuk-tasimaciligi",
     detail: {
       intro:
-        "İster tek palet ister komple araç olsun, İstanbul ve Marmara'dan diğer illere yük taşıyoruz. " +
-        "Gideceği şehri ve yükün ölçüsünü yazın, uygun aracı ve tarihi birlikte planlayalım.",
+        "İster tek palet ister komple tır olsun, İstanbul'dan Marmara, Ege ve Akdeniz'e düzenli sefer yapıyoruz; diğer illere talep üzerine yük taşıyoruz. " +
+        "Gideceği şehri ve yükün ölçüsünü yazın, işe uygun aracı (kamyonet, kamyon ya da tır) ve tarihi birlikte planlayalım.",
       highlights: [
         { icon: "Boxes", title: "Parsiyel & Komple", text: "Tek koliden komple tıra kadar her ölçekte yük taşıma." },
-        { icon: "Route", title: "Şehirler Arası Sevkiyat", text: "Marmara dışındaki illere talep üzerine, yükünüze uygun araçla sevkiyat." },
+        { icon: "Route", title: "Düzenli Sefer", text: "Marmara, Ege ve Akdeniz'e düzenli sefer; diğer illere talep üzerine, yüke uygun araçla sevkiyat." },
         { icon: "MapPin", title: "Yolda Bilgilendirme", text: "Yola çıkış ve tahmini varış saatini paylaşıyor, yol boyunca telefonla bilgi veriyoruz." },
         { icon: "ShieldCheck", title: "Sabitlenmiş Yük", text: "Yük paketlenir, araçta kayış ve ara takozla sabitlenir." },
       ],
@@ -100,7 +100,7 @@ export const services: Service[] = [
         {
           title: "Komple yük taşıma",
           body: "Büyük hacimli ve yoğun sevkiyatlar için kapıdan kapıya komple araç. Yükünüz tek araçla, aktarmasız ve doğrudan teslim edilir.",
-          bullets: ["Kapıdan kapıya teslim", "Aktarmasız, doğrudan sevkiyat", "Kamyonet, kamyon ve tır seçenekleri"],
+          bullets: ["Kapıdan kapıya teslim", "Aktarmasız, doğrudan sevkiyat", "Kamyonet, kamyon ve tır seçenekleri", "İsteğe bağlı taşıma sigortası"],
         },
         {
           title: "Kurumsal lojistik & dağıtım",
@@ -132,14 +132,6 @@ export const services: Service[] = [
     excerpt: "Profesyonel ambalaj malzemeleriyle paketleme, mobilya söküm ve kurulum.",
     icon: "Package",
     image: images.servicePaketleme,
-    href: "/hizmetler/evden-eve-nakliyat",
-  },
-  {
-    slug: "esya-depolama",
-    title: "Eşya Depolama",
-    excerpt: "Yeni ev hazır değilse ya da eşyanın bir kısmı sığmayacaksa depolama ihtiyacınızı sorun, birlikte çözüm bulalım.",
-    icon: "Warehouse",
-    image: images.serviceDepolama,
     href: "/hizmetler/evden-eve-nakliyat",
   },
 ];

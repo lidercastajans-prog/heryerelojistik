@@ -147,7 +147,7 @@ export const posts: Post[] = [
       {
         heading: "5. Ek hizmetler",
         paragraphs: [
-          "Mobilya söküm-montaj, beyaz eşya bağlantıları ve ara depolama gibi ek işler fiyata yansır. İhtiyacınız olmayan hizmetleri baştan belirleyerek gereksiz maliyetten kaçınabilirsiniz.",
+          "Mobilya söküm-montaj, beyaz eşya bağlantıları ve isteğe bağlı taşıma sigortası gibi ek işler fiyata yansır. İhtiyacınız olmayan hizmetleri baştan belirleyerek gereksiz maliyetten kaçınabilirsiniz.",
         ],
       },
       {

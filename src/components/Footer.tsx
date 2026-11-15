@@ -99,7 +99,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-xs text-slate-500 sm:flex-row">
           <p>© {year} {site.name}. Tüm hakları saklıdır.</p>
-          <p>İstanbul merkezli · Marmara'da düzenli · Şehirler arası</p>
+          <p>İstanbul merkezli · Marmara, Ege ve Akdeniz'e düzenli sefer</p>
         </div>
       </div>
     </footer>

@@ -5,10 +5,13 @@ import { citySlugByName } from "@/lib/cities";
 
 export default function CoverageAreas({
   cities,
+  regular = [],
   intercity = [],
   note,
 }: {
   cities: string[];
+  /** Ege ve Akdeniz'de düzenli sefer yapılan iller (il sayfası yok, link verilmez). */
+  regular?: string[];
   intercity?: string[];
   note: string;
 }) {
@@ -20,7 +23,7 @@ export default function CoverageAreas({
             Hizmet Bölgeleri
           </span>
           <h2 className="mt-4 text-3xl font-extrabold text-ink sm:text-4xl">
-            <span className="text-brand-600">İstanbul ve Marmara</span>&apos;da düzenli taşıma
+            İstanbul merkezli; <span className="text-brand-600">Marmara, Ege ve Akdeniz</span>&apos;e düzenli sefer
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{note}</p>
           <Link
@@ -55,10 +58,28 @@ export default function CoverageAreas({
               );
             })}
           </ul>
+          {regular.length > 0 && (
+            <div className="mt-8">
+              <p className="text-sm font-bold uppercase tracking-wider text-muted">
+                Ege ve Akdeniz&apos;e düzenli sefer
+              </p>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {regular.map((city) => (
+                  <li
+                    key={city}
+                    className="flex items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-sm font-semibold text-ink-soft"
+                  >
+                    <MapPin className="h-3.5 w-3.5 shrink-0 text-brand-600" aria-hidden />
+                    {city}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {intercity.length > 0 && (
             <div className="mt-8">
               <p className="text-sm font-bold uppercase tracking-wider text-muted">
-                Şehirler arası taşıma (talep üzerine)
+                Diğer iller (talep üzerine)
               </p>
               <p className="mt-2 text-sm leading-relaxed text-muted">
                 {intercity.join(", ")} ve diğer iller için gideceğiniz yeri yazın, tarih ve fiyatı konuşalım.

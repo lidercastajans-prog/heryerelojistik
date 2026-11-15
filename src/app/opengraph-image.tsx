@@ -55,7 +55,7 @@ export default function OpengraphImage() {
         {/* Alt bilgi */}
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 30, opacity: 0.95 }}>
           <div>heryerelojistik.com</div>
-          <div>İstanbul ve Marmara · Şehirler arası</div>
+          <div>İstanbul merkezli · Marmara, Ege, Akdeniz</div>
         </div>
       </div>
     ),

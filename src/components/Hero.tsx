@@ -65,8 +65,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/80">
-            İstanbul ve Marmara'da evden eve nakliyat, diğer illere şehirler arası taşıma.
-            Eşyanız paketlenip sabitlenerek taşınır. Saniyeler içinde online teklif alın.
+            İstanbul merkezli evden eve nakliyat ve yük taşıma. Marmara, Ege ve Akdeniz&apos;e düzenli
+            sefer, diğer illere talep üzerine. Eşyanın fotoğrafını gönderin, fiyatı hemen konuşalım.
           </p>
 
           <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-white/90">
@@ -93,7 +93,7 @@ export default function Hero() {
             <span className="grid h-7 w-7 place-items-center rounded-full bg-accent-100 text-accent-600">
               <MapPin className="h-4 w-4" aria-hidden />
             </span>
-            İstanbul ve Marmara
+            Marmara · Ege · Akdeniz
           </div>
           {/* Yüzen rozet — puan */}
           <div className="floaty absolute -bottom-5 -right-3 z-10 hidden items-center gap-2 rounded-2xl bg-white px-4 py-2.5 text-sm font-bold text-ink shadow-xl sm:flex">

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 const VALUES = [
   { icon: Target, title: "Misyonumuz", text: "Her taşımayı kendi eşyamızmış gibi özenle paketleyip, konuştuğumuz saatte teslim etmek." },
-  { icon: Eye, title: "Vizyonumuz", text: "İstanbul ve Marmara'da, taşınacak biri olduğunda akla ilk gelen firmalardan biri olmak." },
+  { icon: Eye, title: "Vizyonumuz", text: "İstanbul'dan Marmara, Ege ve Akdeniz'e taşınacak biri olduğunda akla ilk gelen firmalardan biri olmak." },
   { icon: HeartHandshake, title: "Değerlerimiz", text: "Dürüstlük, şeffaf fiyat, müşteri memnuniyeti ve işine saygı duyan bir ekip." },
 ];
 
@@ -60,8 +60,9 @@ export default async function HakkimizdaPage() {
             </p>
             <p>
               Merkezimiz Kağıthane'de. İstanbul'un iki yakasında ve Kocaeli, Tekirdağ, Bursa,
-              Sakarya, Yalova'da düzenli taşıma yapıyor; diğer illere şehirler arası taşımayı
-              talep üzerine planlıyoruz.
+              Sakarya, Yalova'da düzenli taşıma yapıyoruz. Ege ve Akdeniz'e de düzenli seferimiz
+              var; diğer illere talep üzerine gidiyoruz. İşe göre kamyonet, kamyon ya da tır
+              ayarlıyoruz.
             </p>
           </div>
 

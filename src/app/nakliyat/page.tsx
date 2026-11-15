@@ -5,12 +5,13 @@ import PageHero from "@/components/PageHero";
 import CtaSection from "@/components/CtaSection";
 import JsonLd from "@/components/JsonLd";
 import { cities } from "@/lib/cities";
+import { regularRouteCities } from "@/lib/coverage";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Hizmet Bölgeleri — İstanbul ve Marmara Nakliyat",
+  title: "Hizmet Bölgeleri — İstanbul, Marmara, Ege, Akdeniz",
   description:
-    "İstanbul, Kocaeli, Tekirdağ, Bursa, Sakarya ve Yalova'da evden eve nakliyat; diğer illere şehirler arası taşıma. Bölgenizi seçin, teklif alın.",
+    "İstanbul, Kocaeli, Tekirdağ, Bursa, Sakarya ve Yalova'da evden eve nakliyat; Ege ve Akdeniz'e düzenli sefer, diğer illere talep üzerine. Bölgenizi seçin.",
   alternates: { canonical: "/nakliyat" },
 };
 
@@ -25,7 +26,7 @@ export default function NakliyatHubPage() {
       <JsonLd data={breadcrumbSchema(breadcrumb)} />
       <PageHero
         title="Hizmet Bölgeleri"
-        description="İstanbul'un iki yakasında ve Marmara'daki beş ilde düzenli taşıma yapıyoruz. Diğer illere şehirler arası taşıma talep üzerine. Aşağıdan bölgenizi seçin."
+        description="İstanbul'un iki yakasında ve Marmara'daki beş ilde düzenli taşıma yapıyoruz. Ege ve Akdeniz'e de düzenli seferimiz var; diğer illere talep üzerine gidiyoruz. Aşağıdan bölgenizi seçin."
         breadcrumb={breadcrumb}
       />
 
@@ -55,8 +56,9 @@ export default function NakliyatHubPage() {
         </div>
 
         <p className="mt-10 rounded-3xl border border-line bg-surface p-6 text-center text-muted">
-          Bölgeniz listede yok mu? Diğer illere{" "}
-          <strong className="text-ink">şehirler arası taşıma</strong> yapıyoruz; gideceğiniz yeri yazın,
+          Bölgeniz listede yok mu? Ege ve Akdeniz&apos;de{" "}
+          <strong className="text-ink">düzenli sefer</strong> yaptığımız iller: {regularRouteCities.join(", ")}.
+          Diğer illere de talep üzerine gidiyoruz; gideceğiniz yeri yazın,
           uygunluğu ve fiyatı konuşalım —{" "}
           <Link href="/teklif-al" className="font-bold text-brand-700 hover:text-accent-600">
             ücretsiz teklif alın

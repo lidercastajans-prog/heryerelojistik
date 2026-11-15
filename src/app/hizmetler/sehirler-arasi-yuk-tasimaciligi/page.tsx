@@ -12,7 +12,7 @@ const service = getServiceBySlug(SLUG)!;
 export const metadata: Metadata = {
   title: "Şehirler Arası Yük Taşımacılığı",
   description:
-    "İstanbul'dan diğer illere parsiyel ve komple yük taşımacılığı. Planlı yükleme, sabitlenmiş yük ve teslim. Gideceği şehri yazın, fiyatı hemen konuşalım.",
+    "İstanbul'dan Marmara, Ege ve Akdeniz'e düzenli sefer; parsiyel ve komple tır yükü. Kamyonet, kamyon, tır seçenekleri. Gideceği şehri yazın, fiyatı konuşalım.",
   alternates: { canonical: `/hizmetler/${SLUG}` },
 };
 
@@ -34,7 +34,7 @@ export default function Page() {
       />
       <PageHero
         title={service.title}
-        description="Tek paletten komple araca kadar, İstanbul ve Marmara'dan diğer illere yük taşıyoruz. Tarihi ve aracı birlikte planlıyoruz."
+        description="Tek paletten komple tıra kadar, İstanbul'dan Marmara, Ege ve Akdeniz'e düzenli sefer yapıyoruz; diğer illere talep üzerine gidiyoruz. Tarihi ve aracı birlikte planlıyoruz."
         breadcrumb={[
           { name: "Ana Sayfa", path: "/" },
           { name: "Hizmetler", path: "/#hizmetler" },

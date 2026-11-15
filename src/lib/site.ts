@@ -17,8 +17,9 @@ export const site = {
   legalName: "Her Yere Lojistik Nakliyat ve Taşımacılık",
   tagline: "İstanbul merkezli evden eve nakliyat ve şehirler arası taşımacılık.",
   description:
-    "Her Yere Lojistik — İstanbul ve Marmara'da evden eve nakliyat, diğer illere şehirler arası " +
-    "yük taşımacılığı. Özenli paketleme, asansörlü taşıma. Saniyeler içinde online teklif alın.",
+    "Her Yere Lojistik — İstanbul merkezli evden eve nakliyat ve şehirler arası yük taşımacılığı. " +
+    "Marmara, Ege ve Akdeniz'e düzenli sefer, diğer illere talep üzerine. Özenli paketleme, asansörlü taşıma. " +
+    "Fotoğraf gönderin, fiyat alın.",
 
   // Canlı alan adı
   url: "https://heryerelojistik.com",

@@ -39,7 +39,12 @@ export default async function HomePage() {
       <ServicesGrid services={services} />
       <WhyUs />
       <ProcessSteps steps={steps} />
-      <CoverageAreas cities={coverage.cities} intercity={coverage.intercity} note={coverage.note} />
+      <CoverageAreas
+        cities={coverage.cities}
+        regular={coverage.regular}
+        intercity={coverage.intercity}
+        note={coverage.note}
+      />
 
       {/* Galeri önizleme */}
       <section className="container-x py-20 lg:py-28">

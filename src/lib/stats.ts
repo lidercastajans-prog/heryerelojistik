@@ -8,7 +8,7 @@ export type Stat = {
 };
 
 export const stats: Stat[] = [
-  { value: 6, label: "İlde Düzenli Hizmet" },
+  { value: 3, label: "Bölgeye Düzenli Sefer: Marmara, Ege, Akdeniz" },
   { value: 2, label: "Yaka: Avrupa ve Anadolu" },
   { value: 7, suffix: "/24", label: "Telefon ve WhatsApp" },
   { value: 1, label: "Mesajla Teklif" },

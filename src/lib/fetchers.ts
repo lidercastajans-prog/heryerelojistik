@@ -11,7 +11,7 @@ import { stats, type Stat } from "./stats";
 import { processSteps, type ProcessStep } from "./process";
 import { testimonials, type Testimonial } from "./testimonials";
 import { faqs, type Faq } from "./faqs";
-import { featuredCities, intercityCities, coverageNote } from "./coverage";
+import { featuredCities, regularRouteCities, intercityCities, coverageNote } from "./coverage";
 
 export async function fetchServices(): Promise<Service[]> {
   return services;
@@ -41,6 +41,11 @@ export async function fetchFaqs(): Promise<Faq[]> {
   return faqs;
 }
 
-export async function fetchCoverage(): Promise<{ cities: string[]; intercity: string[]; note: string }> {
-  return { cities: featuredCities, intercity: intercityCities, note: coverageNote };
+export async function fetchCoverage(): Promise<{
+  cities: string[];
+  regular: string[];
+  intercity: string[];
+  note: string;
+}> {
+  return { cities: featuredCities, regular: regularRouteCities, intercity: intercityCities, note: coverageNote };
 }

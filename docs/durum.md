@@ -5,6 +5,7 @@ Son güncelleme: 15.11.2026 · Ana defter: `C:\Users\user\Desktop\ajans\musteril
 ## Site
 - ✅ Canlı: https://heryerelojistik.com (Vercel projesi `heryerelojistik`, ekip lidercastajans-9230s-projects; `main` push = yayın). DNS GoDaddy (ns77/78.domaincontrol.com).
 - ✅ **www düzeltildi (15.11, kullanıcı onayı):** www SSL hatası veriyordu (DNS'te www → cname.vercel-dns.com vardı ama www Vercel projesine eklenmemişti). Vercel API ile `www.heryerelojistik.com` projeye eklendi, `heryerelojistik.com`'a **308** yönlendirme; sertifika çıktı, `https://www.heryerelojistik.com/iletisim` → 308 → 200 doğrulandı.
+- ✅ **Teyitsiz iddialar yumuşatıldı (15.11, `0735cba` CANLIDA, kullanıcı "evet yayınla"):** sigorta / 81 il / ücretsiz keşif / sahiplik-garanti vaatleri sitede 0; bölge vurgusu İstanbul + Kocaeli, Tekirdağ, Bursa, Sakarya, Yalova; diğer iller "şehirler arası, talep üzerine". Firmaya sorulacak: yerinde keşif? (~20 "keşif" ifadesi duruyor), depolama gerçekten var mı?, 7/24?, araç/asansör sahipliği, sigorta poliçesi planı, kendi iş fotoğrafları, düzenli şehirler arası güzergâhlar.
 - 🟠 Görseller: 9 site görseli (`src/lib/images.ts`) + 12 galeri fotoğrafı (`src/lib/gallery.ts`) GEÇİCİ Unsplash stok.
 - 🟠 Sosyal medya linkleri boş (`src/lib/site.ts` → social).
 - Haritalar linki (`src/lib/schema.ts` MAPS_URL) şu an adres araması — profil doğrulanınca gerçek profil linkiyle değiştir.
