@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Hero from "@/components/Hero";
-import StatsBand from "@/components/StatsBand";
 import ServicesGrid from "@/components/ServicesGrid";
 import WhyUs from "@/components/WhyUs";
 import ProcessSteps from "@/components/ProcessSteps";
@@ -13,7 +12,6 @@ import SectionHeading from "@/components/SectionHeading";
 import JsonLd from "@/components/JsonLd";
 import {
   fetchServices,
-  fetchStats,
   fetchProcessSteps,
   fetchFaqs,
   fetchCoverage,
@@ -22,9 +20,8 @@ import { galleryItems } from "@/lib/gallery";
 import { organizationSchema, websiteSchema, faqSchema } from "@/lib/schema";
 
 export default async function HomePage() {
-  const [services, stats, steps, faqs, coverage] = await Promise.all([
+  const [services, steps, faqs, coverage] = await Promise.all([
     fetchServices(),
-    fetchStats(),
     fetchProcessSteps(),
     fetchFaqs(),
     fetchCoverage(),
@@ -35,7 +32,6 @@ export default async function HomePage() {
       <JsonLd data={[organizationSchema(), websiteSchema(), faqSchema()]} />
 
       <Hero />
-      <StatsBand stats={stats} />
       <ServicesGrid services={services} />
       <WhyUs />
       <ProcessSteps steps={steps} />

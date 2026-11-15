@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { Target, Eye, HeartHandshake } from "lucide-react";
 import PageHero from "@/components/PageHero";
-import StatsBand from "@/components/StatsBand";
 import WhyUs from "@/components/WhyUs";
 import CtaSection from "@/components/CtaSection";
 import JsonLd from "@/components/JsonLd";
 import Photo from "@/components/Photo";
-import { fetchStats } from "@/lib/fetchers";
 import { breadcrumbSchema } from "@/lib/schema";
 import { site } from "@/lib/site";
 import { images } from "@/lib/images";
@@ -23,9 +21,7 @@ const VALUES = [
   { icon: HeartHandshake, title: "Değerlerimiz", text: "Dürüstlük, şeffaf fiyat, müşteri memnuniyeti ve işine saygı duyan bir ekip." },
 ];
 
-export default async function HakkimizdaPage() {
-  const stats = await fetchStats();
-
+export default function HakkimizdaPage() {
   return (
     <>
       <JsonLd
@@ -96,9 +92,6 @@ export default async function HakkimizdaPage() {
         </div>
       </section>
 
-      <div className="pb-4">
-        <StatsBand stats={stats} />
-      </div>
       <WhyUs />
       <CtaSection />
     </>
