@@ -243,7 +243,7 @@
    ============================================================ */
 .hs {
   position: relative;
-  height: 150svh; /* 16.11: 190 → 150, sahne daha kısa kaydırmada biter */
+  height: 125svh; /* 16.11: 190 → 150 → 125, kullanıcı daha hızlı istedi */
   background: #0a1430;
   overflow-x: clip; /* sticky'yi bozmadan yatay taşmayı keser */
 }
@@ -334,7 +334,7 @@
 }
 /* Masaüstü: sahne tam ekran, metin solda */
 @media (min-width: 1024px) and (min-aspect-ratio: 5/4) {
-  .hs { height: 230svh; } /* 16.11: 300 → 230, ~%50 daha hızlı */
+  .hs { height: 170svh; } /* 16.11: 300 → 230 → 170, kullanıcı daha hızlı istedi */
   .hs-svg {
     inset: 0;
     width: 100%;
