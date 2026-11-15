@@ -48,9 +48,9 @@ export const site = {
   indexable: true,
 
   social: {
-    // Sosyal medya hesapları henüz açılmadı — açılınca buraya eklenecek.
+    // Facebook Sayfası 15.11.2026'da açıldı (ajans). Instagram açılınca eklenecek.
     instagram: "",
-    facebook: "",
+    facebook: "https://www.facebook.com/profile.php?id=61596542943551",
     linkedin: "",
     youtube: "",
   },

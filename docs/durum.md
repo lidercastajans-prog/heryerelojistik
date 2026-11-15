@@ -22,3 +22,15 @@ Son güncelleme: 15.11.2026 · Ana defter: `C:\Users\user\Desktop\ajans\musteril
 
 ## Google Ads
 - ⬜ Yok.
+
+## Sosyal medya (Instagram / Facebook / Meta reklam)
+- **KAPSAM (kullanıcı, 15.11): sosyal medya yönetimi tamamen AJANSTA** — görsel üretimi + içerik (metin, Reels, hikâye) + zamanlama + Meta reklam. Firmadan yalnız: hesap sahipliği/onayı, ham fotoğraf-video, iddia teyitleri, reklam ödeme yöntemi. Her paylaşım/zamanlama/reklam açma yine kullanıcı onayıyla.
+- Profil görselleri hazır: `Desktop\ajans\marka\heryerelojistik\sosyal\` (profil, FB kapak, 5 hikâye kapağı, pano).
+- ✅ **Facebook Sayfası AÇILDI (15.11, kullanıcının kendi Facebook profilinden, kullanıcı onayıyla şartlar kabul):** https://www.facebook.com/profile.php?id=61596542943551 — ad "Her Yere Lojistik", kategori Kargo ve Nakliye Şirketi, site/tel +90 533 929 83 24/info@heryerelojistik.com/adres Kağıthane 34406, "Sürekli Açık", eylem düğmesi "Şimdi ara", profil + kapak yüklendi, biyografi eklendi, Meta pazarlama e-postaları kapalı. WhatsApp bağlanmadı (firmanın telefonuna kod gerekiyor). Kullanıcı adı (@heryerelojistik) henüz alınmadı. Firma sahibi sonra yönetici eklenecek.
+- ⬜ Instagram: web'de kullanıcının IG oturumu açık olduğu için yeni hesap açılamadı → telefondan (Hesap ekle → Yeni hesap; heryerelojistik@gmail.com, @heryerelojistik) açılacak, sonra Facebook Sayfasına bağlanacak.
+- ✅ İlk 2 hafta içerik görselleri (44 PNG + metin.txt, AI yok): `Desktop\ajans\marka\heryerelojistik\sosyal\icerik\` (pano-hafta-1-2.png). G6 metnindeki "kapalı kasa araç" firmaya teyit edilecek.
+- 🟠 **15.11: hazırlık bitti, hesap YOK.** `docs/sosyal-medya/` → `OKUBENI.md`, `kurulum.md`, `icerik-takvimi-ilk-ay.md` (23.11–20.12: 12 gönderi + 4 Reels), `meta-reklam-plani.md` (WhatsApp'a mesaj; bütçe senaryoları ₺250/500/900 günlük, karar firmada). Hiçbir şey paylaşılmadı/zamanlanmadı/açılmadı.
+- Önerilen kullanıcı adı `heryerelojistik` (IG+FB 15.11'de boş görünüyor, kesin değil). `@heryerenakliyat` başka bir nakliyatçının — kullanma.
+- Bekleyen: firma sahibi hesapları açacak + ajansı iş ortağı ekleyecek; WhatsApp Business teyidi; çekim listesi; teyitsiz iddialar (sigorta, ücretsiz keşif, 81 il, mobil asansör, depo) sosyal medyada kullanılmıyor → firmaya soruldu mu?
+- Kullanıcı onayı gerekli: takvimin Postiz ile zamanlanması; reklam (hesap + günlük bütçe + ay sonu en fazla harcama rakamla).
+- Sitede ölçüm yok (Pixel/GA/CSP/çerez metni yok). WhatsApp reklamı için şart değil; siteye yönlendiren reklam istenirse Pixel + çerez onayı + KVKK metni (dijital-ajans).
